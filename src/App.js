@@ -1,22 +1,21 @@
-import logo from "./logo.svg";
-import "./App.css";
+/** @jsxImportSource @emotion/react */
+import HomePage from "./HomePage";
+import LinksPage from "./LinksPage";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/links">
+          <LinksPage />
+        </Route>
+        <Route path="/">
+          <HomePage />
+        </Route>
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;
