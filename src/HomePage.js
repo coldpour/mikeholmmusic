@@ -5,6 +5,8 @@ import Header from "./Header";
 import Title from "./Title";
 import SocialLinks from "./SocialLinks";
 
+const breakpoint = "550px";
+
 const HomePage = () => (
   <div
     css={css`
@@ -15,7 +17,14 @@ const HomePage = () => (
       width: 100%;
     `}
   >
-    <Header>
+    <Header
+      css={css`
+        justify-content: center;
+        @media (min-width: ${breakpoint}) {
+          justify-content: space-between;
+        }
+      `}
+    >
       <Title />
       <div
         css={css`
@@ -28,8 +37,8 @@ const HomePage = () => (
       <SocialLinks
         css={css`
           display: none;
-          @media (min-width: 1000px) {
-            display: block;
+          @media (min-width: ${breakpoint}) {
+            display: flex;
           }
         `}
       />
@@ -45,8 +54,9 @@ const HomePage = () => (
     ></div>
     <SocialLinks
       css={css`
+        padding: 1em;
         display: flex;
-        @media (min-width: 1000px) {
+        @media (min-width: ${breakpoint}) {
           display: none;
         }
       `}

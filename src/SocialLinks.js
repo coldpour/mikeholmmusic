@@ -6,7 +6,6 @@ import SocialLink from "./SocialLink";
 const SocialLinks = (props) => (
   <div
     css={css`
-      padding: 1em;
       display: flex;
       justify-content: center;
       > * {
