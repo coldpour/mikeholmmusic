@@ -5,7 +5,7 @@ import Header from "./Header";
 import Title from "./Title";
 import SocialLinks from "./SocialLinks";
 
-const breakpoint = "550px";
+const breakpoint = "620px";
 
 const HomePage = () => (
   <div
@@ -25,7 +25,14 @@ const HomePage = () => (
         }
       `}
     >
-      <Title />
+      <Title
+        css={css`
+          margin-left: 0;
+          @media (min-width: ${breakpoint}) {
+            margin-left: 0.5em;
+          }
+        `}
+      />
       <div
         css={css`
           display: flex;

@@ -8,14 +8,17 @@ const SocialLinks = (props) => (
     css={css`
       display: flex;
       justify-content: center;
-      > * {
-        margin: 0 0.5em;
-      }
     `}
     {...props}
   >
     {linkData.map((props) => (
-      <SocialLink key={props.href} {...props} />
+      <SocialLink
+        key={props.href}
+        css={css`
+          margin-left: 1em;
+        `}
+        {...props}
+      />
     ))}
   </div>
 );

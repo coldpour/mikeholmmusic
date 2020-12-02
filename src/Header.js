@@ -5,7 +5,7 @@ const Header = (props) => {
   return (
     <header
       css={css`
-        padding: 1em 2em;
+        padding: 1em;
         display: flex;
         align-items: center;
         justify-content: center;
