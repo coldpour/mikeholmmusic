@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import links from "./links";
+import linkData from "./linkData";
 import SocialLink from "./SocialLink";
 
 const SocialLinks = (props) => (
@@ -14,7 +14,7 @@ const SocialLinks = (props) => (
     `}
     {...props}
   >
-    {links.map((props) => (
+    {linkData.map((props) => (
       <SocialLink key={props.href} {...props} />
     ))}
   </div>

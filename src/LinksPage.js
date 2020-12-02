@@ -1,10 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { Link } from "react-router-dom";
-import links from "./links";
-import TreeLink from "./Link";
+import linkData from "./linkData";
+import TreeLink from "./TreeLink";
 import Header from "./Header";
 import Title from "./Title";
+import Avatar from "./Avatar";
 
 const LinksPage = () => (
   <div
@@ -12,8 +13,8 @@ const LinksPage = () => (
       display: flex;
       flex-direction: column;
       height: 100%;
-      position: fixed;
       width: 100%;
+      align-items: center;
     `}
   >
     <Header>
@@ -27,23 +28,29 @@ const LinksPage = () => (
         <Title />
       </Link>
     </Header>
+    <Avatar
+      css={css`
+        margin-top: 1em;
+      `}
+    />
     <div
       css={css`
+        margin-top: 2em;
         flex-grow: 1;
         display: flex;
         justify-content: center;
-        align-items: center;
       `}
     >
       <div
         css={css`
-          width: 300px;
+          max-width: 680px;
+          min-width: 300px;
           > * {
             margin: 0.5em;
           }
         `}
       >
-        {links.map(({ href, ...rest }) => (
+        {linkData.map(({ href, ...rest }) => (
           <TreeLink key={href} {...rest} />
         ))}
       </div>

@@ -1,12 +1,12 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 
-const Link = ({ src, alt, label, ...rest }) => (
+const TreeLink = ({ src, alt, label, ...rest }) => (
   <a
     css={css`
       border: 1px solid black;
       display: flex;
-      padding: 0.5em 2em;
+      padding: 0.5em;
       text-decoration: none;
       color: black;
       border-radius: 5px;
@@ -38,4 +38,4 @@ const Link = ({ src, alt, label, ...rest }) => (
   </a>
 );
 
-export default Link;
+export default TreeLink;
