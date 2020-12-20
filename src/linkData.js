@@ -2,6 +2,7 @@ import ig from "./ig.png";
 import yt from "./yt.png";
 import tiktok from "./tiktok.png";
 import soundcloud from "./soundcloud.png";
+import venmo from "./venmo.png";
 
 const linkData = [
   {
@@ -27,6 +28,12 @@ const linkData = [
     alt: "soundcloud logo",
     href: "https://soundcloud.com/mike-holm-173325201",
     label: "SoundCloud",
+  },
+  {
+    src: venmo,
+    alt: "venmo logo",
+    href: "https://venmo.com/themikeholm",
+    label: "Venmo",
   },
 ];
 
