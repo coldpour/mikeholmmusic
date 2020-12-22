@@ -12,6 +12,15 @@ const strokeWidth = 0;
 const fill = cerulean;
 const stroke = "none";
 
+const Box = (props) => (
+  <div
+    css={css`
+      flex: 1;
+    `}
+    {...props}
+  />
+);
+
 const letters = [
   [
     [startX(0), 0],
@@ -73,13 +82,15 @@ const MhmLogo = (props) => {
       <div
         css={css`
           text-align: center;
+          text-transform: uppercase;
           display: flex;
-          justify-content: space-around;
+          font-size: 2em;
+          font-weight: 200;
         `}
       >
-        <div>Mike</div>
-        <div>Holm</div>
-        <div>Music</div>
+        <Box>Mike</Box>
+        <Box>Holm</Box>
+        <Box>Music</Box>
       </div>
     </div>
   );
