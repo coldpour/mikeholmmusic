@@ -1,15 +1,16 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import mhm from "./mhm.png";
 
+const cerulean = "#007ba7";
 const width = 94;
 const height = 190;
 const indent = 53;
 const spacing = 6;
-const deletableOffsetX = 4;
-const startX = (letterIndex) =>
-  deletableOffsetX + letterIndex * (width + spacing);
+const startX = (letterIndex) => letterIndex * (width + spacing);
 const endX = (letterIndex) => startX(letterIndex) + width;
+const strokeWidth = 0;
+const fill = cerulean;
+const stroke = "none";
 
 const letters = [
   [
@@ -54,38 +55,32 @@ const pathString = `M${letters
   .map((letter) => letter.map((point) => point.join(" ")).join("L"))
   .join("zM")}z`;
 
-const MhmLogo = () => {
+const MhmLogo = (props) => {
   return (
-    <div>
+    <div {...props}>
+      <svg
+        css={css`
+          fill: ${fill};
+          stroke: ${stroke};
+          stroke-width: ${strokeWidth};
+        `}
+        viewBox={`-${strokeWidth / 2} -${strokeWidth} ${
+          endX(5) + strokeWidth
+        } ${height + 2 * strokeWidth}`}
+      >
+        <path d={pathString} />
+      </svg>
       <div
         css={css`
-          position: relative;
-          height: 35vw;
-          overflow: hidden;
+          text-align: center;
+          display: flex;
+          justify-content: space-around;
         `}
       >
-        <img
-          css={css`
-            border: 1px solid blue;
-            width: 100%;
-          `}
-          src={mhm}
-          alt="logo"
-        />
-        <svg
-          css={css`
-            position: absolute;
-            fill: yellow;
-            left: 0;
-            top: 0;
-            border: 1px solid red;
-          `}
-          viewBox={`0 0 ${endX(5)} ${height}`}
-        >
-          <path d={pathString} />
-        </svg>
+        <div>Mike</div>
+        <div>Holm</div>
+        <div>Music</div>
       </div>
-      <pre>{JSON.stringify(pathString.split("z"), null, 2)}</pre>
     </div>
   );
 };
