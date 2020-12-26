@@ -9,7 +9,7 @@ const TreeLink = ({ src, alt, label, ...rest }) => (
       padding: 0.5em;
       text-decoration: none;
       color: black;
-      border-radius: 5px;
+      border-radius: 2px;
       align-items: center;
       justify-content: center;
       background: white;

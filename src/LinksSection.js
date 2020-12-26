@@ -11,26 +11,38 @@ const LinksSection = (props) => {
       css={css`
         display: flex;
         flex-direction: column;
-        width: 100%;
         align-items: center;
+        @media (min-width: 600px) {
+          flex-direction: row;
+          padding: 4em;
+        }
       `}
       {...props}
     >
-      <Avatar
-        css={css`
-          margin-top: 1em;
-        `}
-      />
-      <MhmLogo
-        css={css`
-          margin-top: 2em;
-          width: 50%;
-          max-width: 400px;
-        `}
-      />
       <div
         css={css`
-          margin-top: 2em;
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        `}
+      >
+        <Avatar
+          css={css`
+            margin-top: 1em;
+          `}
+        />
+        <MhmLogo
+          css={css`
+            margin-top: 2em;
+            width: 50%;
+            max-width: 400px;
+          `}
+        />
+      </div>
+      <div
+        css={css`
           flex-grow: 1;
           display: flex;
           justify-content: center;
