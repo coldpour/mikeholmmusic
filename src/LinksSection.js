@@ -12,7 +12,7 @@ const LinksSection = (props) => {
         display: flex;
         flex-direction: column;
         align-items: center;
-        @media (min-width: 600px) {
+        @media (min-width: 900px) {
           flex-direction: row;
           padding: 4em;
         }
@@ -26,6 +26,7 @@ const LinksSection = (props) => {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          border: 1px solid red;
         `}
       >
         <Avatar
