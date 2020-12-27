@@ -1,21 +1,11 @@
 /** @jsxImportSource @emotion/react */
-import HomePage from "./HomePage";
-import LinksPage from "./LinksPage";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import AppProviders from "./AppProviders";
+import AppRouter from "./AppRouter";
 
-const App = () => {
-  return (
-    <Router>
-      <Switch>
-        <Route path="/links">
-          <LinksPage />
-        </Route>
-        <Route path="/">
-          <HomePage />
-        </Route>
-      </Switch>
-    </Router>
-  );
-};
+const App = () => (
+  <AppProviders>
+    <AppRouter />
+  </AppProviders>
+);
 
 export default App;

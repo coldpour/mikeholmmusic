@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
+import { cerulean } from "./colors";
 
-const cerulean = "#007ba7";
 const width = 94;
 const height = 190;
 const indent = 53;
