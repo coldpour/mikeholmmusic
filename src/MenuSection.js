@@ -8,16 +8,14 @@ const Root = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (min-width: 600px) {
-    padding: 50px;
-  }
+  padding: 70px 0 50px;
 `;
 
 const Menu = styled.div`
   max-width: 600px;
-  padding: 0.5em;
+  padding: 0 0.5em;
   @media (min-width: 600px) {
-    padding: 1em;
+    padding: 0 1em;
   }
 `;
 
@@ -67,6 +65,7 @@ const MenuText = styled.span`
 
 const MenuHeading = styled.h2`
   text-align: left;
+  margin-top: 0;
 `;
 const HeadingBlock = styled.div`
   display: inline-block;

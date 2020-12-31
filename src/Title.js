@@ -7,8 +7,9 @@ const Title = (props) => {
       css={css`
         text-transform: uppercase;
         white-space: nowrap;
-        font-weight: 200;
-        font-size: 2.5em;
+        font-weight: 100;
+        letter-spacing: 2px;
+        font-size: 36px;
         margin: 0;
       `}
       {...props}

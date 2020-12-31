@@ -4,18 +4,16 @@ import Polaroid from "./Polaroid";
 import FallPhoto from "./FallPhoto";
 
 const Root = styled.div`
-  background: ${(props) => props.theme.colors.primary};
-  min-height: 400px;
-  padding: 50px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  background: ${(props) => props.theme.colors.primary};
+  padding: 70px 50px;
 `;
 
 const PolaroidSection = () => {
   return (
     <Root>
-      <Polaroid>
+      <Polaroid title="Sept 2020">
         <FallPhoto />
       </Polaroid>
     </Root>
