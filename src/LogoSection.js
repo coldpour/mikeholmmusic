@@ -76,7 +76,7 @@ const VenmoLogo = (props) => (
 );
 
 const Root = styled.div`
-  background: hotpink;
+  background: ${(props) => props.theme.colors.primary};
   padding: 50px;
   display: flex;
   justify-content: center;
