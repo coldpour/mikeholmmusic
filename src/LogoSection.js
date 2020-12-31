@@ -1,9 +1,8 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
 const Logo = styled.div`
-  ${(props) => props.theme.square("100px")}
+  ${(props) => props.theme.square("30px")}
   fill: white;
   display: flex;
   justify-content: center;
@@ -68,7 +67,7 @@ const VenmoLogo = (props) => (
   <Logo {...props}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 100.5 107"
+      viewBox="-10 -10 120.5 127"
       height="100%"
     >
       <path d="M94.823 0c3.895 6.433 5.651 13.059 5.651 21.429 0 26.696-22.789 61.376-41.285 85.728H16.943L0 5.845l36.991-3.512 8.958 72.09c8.37-13.636 18.699-35.065 18.699-49.675 0-7.997-1.37-13.444-3.511-17.929z" />
