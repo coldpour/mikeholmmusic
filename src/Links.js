@@ -12,6 +12,8 @@ const Link = styled.a`
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  height: 58px;
+  box-sizing: border-box;
   background: ${(props) => props.theme.colors.primary};
   box-shadow: ${(props) => props.theme.shadow[3]};
 `;
@@ -26,6 +28,9 @@ const Label = styled.div`
 const Links = (props) => {
   return (
     <Root {...props}>
+      <Link href='https://sessionslive.com/waxbandit'>
+        <Label>4/4 Livestream 2pm MT</Label>
+      </Link>
       {linkData.map(({ logo: Logo, label, href }) => (
         <Link
           css={css`
