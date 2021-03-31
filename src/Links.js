@@ -28,7 +28,7 @@ const Label = styled.div`
 const Links = (props) => {
   return (
     <Root {...props}>
-      <Link href='https://sessionslive.com/waxbandit'>
+      <Link href='https://calendar.google.com/event?action=TEMPLATE&tmeid=MHFkbjg0b2s1a2NhMjRtbHY0bGMyMDMxaWQgdGhlbWlrZWhvbG1AbQ&tmsrc=themikeholm%40gmail.com'>
         <Label>4/4 Livestream 2pm MT</Label>
       </Link>
       {linkData.map(({ logo: Logo, label, href }) => (
