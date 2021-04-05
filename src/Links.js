@@ -25,45 +25,54 @@ const Label = styled.div`
   padding: 0 40px;
 `;
 
-const HeroBlueLink = styled(Link)` flex: 1; height: auto; flex-direction: column; justify-content: center; align-items: center;
-border-radius: 3px 0 0 3px;`
+const HeroBlueLink = styled(Link)`
+  flex: 1;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px 0 0 3px;
+`;
 
 const HeroWhiteLink = styled(HeroBlueLink)`
-border-radius: 0 3px 3px 0;
-`
+  border-radius: 0 3px 3px 0;
+`;
 
-const HeroLabel = styled.div`  
-text-align: center;
-color: white;
-`
-const WhiteLabel = styled.div`  
-text-align: center;
-color: ${(props) => props.theme.colors.primary};
-`
+const HeroLabel = styled.div`
+  text-align: center;
+  color: white;
+`;
+const WhiteLabel = styled.div`
+  text-align: center;
+  color: ${(props) => props.theme.colors.primary};
+`;
 
 const Hero = styled.div`
-border: ${props => `1px solid ${props.theme.colors.primary}`};
-border-radius: 4px;
+  border: ${(props) => `1px solid ${props.theme.colors.primary}`};
+  border-radius: 4px;
   display: flex;
-`
+`;
 const Links = (props) => {
   return (
     <Root {...props}>
       <Hero>
-        <HeroBlueLink href='https://sessionslive.com/waxbandit'>
-          <HeroLabel>
-            Livestream 
-            </HeroLabel><HeroLabel>
-            4/4 @ 2pm MT</HeroLabel>
+        <HeroBlueLink href="https://sessionslive.com/waxbandit">
+          <HeroLabel>Livestream</HeroLabel>
+          <HeroLabel>4/10 @ 2pm MT</HeroLabel>
         </HeroBlueLink>
-        <HeroWhiteLink 
-          href='https://calendar.google.com/calendar/u/0/r/eventedit/copy/NHNjbzV1dW10N21qNWxwMTlqbnFjZjN0bnMgdGhlbWlrZWhvbG1AbQ' 
+        <HeroWhiteLink
+          href="https://calendar.google.com/calendar/u/0/r/eventedit/copy/NmoycTM2NjgyaGppZDI2azBqZjFmM2g4cnIgdGhlbWlrZWhvbG1AbQ"
           css={css`
-          background: white; 
-          `}>
-          <WhiteLabel css={css`
-            color: ${(props) => props.theme.colors.primary};
-          `}>add to google calendar</WhiteLabel>  
+            background: white;
+          `}
+        >
+          <WhiteLabel
+            css={css`
+              color: ${(props) => props.theme.colors.primary};
+            `}
+          >
+            add to google calendar
+          </WhiteLabel>
         </HeroWhiteLink>
       </Hero>
       {linkData.map(({ logo: Logo, label, href }) => (
