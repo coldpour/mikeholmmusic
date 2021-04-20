@@ -2,8 +2,16 @@ import ig from "./ig.png";
 import yt from "./yt.png";
 import tiktok from "./tiktok.png";
 import soundcloud from "./soundcloud.png";
-import venmo from "./venmo.png";
+import venmoLogo from "./venmo.png";
 import * as Logos from "./Logos";
+
+export const Venmo = {
+  logo: Logos.VenmoLogo,
+  src: venmoLogo,
+  alt: "venmo logo",
+  href: "https://venmo.com/themikeholm",
+  label: "Venmo",
+};
 
 const linkData = [
   {
@@ -34,13 +42,7 @@ const linkData = [
     href: "https://soundcloud.com/mike-holm-173325201",
     label: "SoundCloud",
   },
-  {
-    logo: Logos.VenmoLogo,
-    src: venmo,
-    alt: "venmo logo",
-    href: "https://venmo.com/themikeholm",
-    label: "Venmo",
-  },
+  Venmo,
 ];
 
 export default linkData;

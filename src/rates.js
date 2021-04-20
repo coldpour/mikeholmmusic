@@ -2,7 +2,7 @@ export const videoRates = [
   [
     "what I want",
     5,
-    "Buy me a drink and tell me your idea. I'll take your idea as inspriation and spin it however I feel in the moment",
+    "Buy me a drink and tell me your idea. I'll bring your idea to life with my own creative twist",
   ],
   [
     "what YOU want",

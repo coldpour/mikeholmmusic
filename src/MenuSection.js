@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import styled from "@emotion/styled";
 import { videoRates, travelRates } from "./rates";
+import { Venmo } from "./linkData";
 
 const Root = styled.div`
   background: white;
@@ -89,6 +90,8 @@ const ViewCount = styled.span`
   font-weight: bold;
 `;
 
+const Link = styled.a``;
+
 const MenuSection = (props) => {
   return (
     <Root {...props}>
@@ -99,7 +102,9 @@ const MenuSection = (props) => {
             <MenuText>Menu</MenuText>
           </HeadingBlock>
         </MenuHeading>
-        <div>Send an idea for a video to my venmo</div>
+        <div>
+          Send an idea for a video to <Link href={Venmo.href}>my venmo</Link>
+        </div>
         <div>
           <RefundText>Full refund</RefundText> if your idea gets{" "}
           <ViewCount>100</ViewCount> views

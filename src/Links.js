@@ -58,10 +58,10 @@ const Links = (props) => {
       <Hero>
         <HeroBlueLink href="https://sessionslive.com/waxbandit">
           <HeroLabel>Livestream</HeroLabel>
-          <HeroLabel>4/10 @ 2pm MT</HeroLabel>
+          <HeroLabel>4/25 @ 5pm MT</HeroLabel>
         </HeroBlueLink>
         <HeroWhiteLink
-          href="https://calendar.google.com/calendar/u/0/r/eventedit/copy/NmoycTM2NjgyaGppZDI2azBqZjFmM2g4cnIgdGhlbWlrZWhvbG1AbQ"
+          href="https://calendar.google.com/calendar/r/eventedit/copy/c2kxNWR2ZW00dW5xM2UzNGM2ZDM1dXZjc2cgdGhlbWlrZWhvbG1AbQ"
           css={css`
             background: white;
           `}
