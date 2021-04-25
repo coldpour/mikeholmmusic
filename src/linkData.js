@@ -43,6 +43,13 @@ const linkData = [
     label: "SoundCloud",
   },
   Venmo,
+  {
+    logo: Logos.CashAppLogo,
+    src: "",
+    alt: "cash app logo",
+    href: "https://cash.app/$themikeholm",
+    label: "Cash App",
+  },
 ];
 
 export default linkData;
