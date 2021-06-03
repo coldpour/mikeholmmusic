@@ -34,47 +34,9 @@ const HeroBlueLink = styled(Link)`
   border-radius: 3px 0 0 3px;
 `;
 
-const HeroWhiteLink = styled(HeroBlueLink)`
-  border-radius: 0 3px 3px 0;
-`;
-
-const HeroLabel = styled.div`
-  text-align: center;
-  color: white;
-`;
-const WhiteLabel = styled.div`
-  text-align: center;
-  color: ${(props) => props.theme.colors.primary};
-`;
-
-const Hero = styled.div`
-  border: ${(props) => `1px solid ${props.theme.colors.primary}`};
-  border-radius: 4px;
-  display: flex;
-`;
 const Links = (props) => {
   return (
     <Root {...props}>
-      <Hero>
-        <HeroBlueLink href="https://sessionslive.com/waxbandit">
-          <HeroLabel>Livestream</HeroLabel>
-          <HeroLabel>4/25 @ 4pm MT</HeroLabel>
-        </HeroBlueLink>
-        <HeroWhiteLink
-          href="https://calendar.google.com/calendar/r/eventedit/copy/c2kxNWR2ZW00dW5xM2UzNGM2ZDM1dXZjc2cgdGhlbWlrZWhvbG1AbQ"
-          css={css`
-            background: white;
-          `}
-        >
-          <WhiteLabel
-            css={css`
-              color: ${(props) => props.theme.colors.primary};
-            `}
-          >
-            add to google calendar
-          </WhiteLabel>
-        </HeroWhiteLink>
-      </Hero>
       {linkData.map(({ logo: Logo, label, href }) => (
         <Link
           css={css`
