@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import PolaroidSection from "./PolaroidSection";
+import VideoSection from "./VideoSection";
 import LogoSection from "./LogoSection";
 import MenuSection from "./MenuSection";
 import AvatarSection from "./AvatarSection";
@@ -7,7 +7,7 @@ import AvatarSection from "./AvatarSection";
 const HomePage = () => (
   <div>
     <AvatarSection />
-    <PolaroidSection />
+    <VideoSection />
     <MenuSection id="menu" />
     <LogoSection />
   </div>
