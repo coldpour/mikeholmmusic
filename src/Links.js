@@ -25,15 +25,6 @@ const Label = styled.div`
   padding: 0 40px;
 `;
 
-const HeroBlueLink = styled(Link)`
-  flex: 1;
-  height: auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 3px 0 0 3px;
-`;
-
 const Links = (props) => {
   return (
     <Root {...props}>
