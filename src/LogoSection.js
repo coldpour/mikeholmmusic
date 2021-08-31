@@ -4,7 +4,7 @@ import linkData from "./linkData";
 
 const Root = styled.div`
   background: ${(props) => props.theme.colors.primary};
-  padding: 50px;
+  padding: 15px;
   display: flex;
   justify-content: center;
 `;
@@ -13,9 +13,9 @@ const Link = styled.a`
   margin: 0 6px;
 `;
 
-const LogoSection = () => {
+const LogoSection = (props) => {
   return (
-    <Root>
+    <Root {...props}>
       {linkData.map(({ logo: Logo, label, href }) => (
         <Link key={href} href={href} title={label}>
           <Logo />

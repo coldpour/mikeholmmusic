@@ -1,8 +1,13 @@
 /** @jsxImportSource @emotion/react */
+import styled from "@emotion/styled";
 import VideoSection from "./VideoSection";
 import LogoSection from "./LogoSection";
 import MenuSection from "./MenuSection";
 import AvatarSection from "./AvatarSection";
+
+const BottomLogoSection = styled(LogoSection)`
+  padding: 50px;
+`;
 
 const HomePage = () => (
   <div>
@@ -10,7 +15,7 @@ const HomePage = () => (
     <AvatarSection />
     <VideoSection />
     <MenuSection id="menu" />
-    <LogoSection />
+    <BottomLogoSection />
   </div>
 );
 
