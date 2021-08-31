@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
-import linkData from "./linkData";
+import { promo } from "./linkData";
 
 const Root = styled.div``;
 
@@ -22,13 +22,13 @@ const Label = styled.div`
   flex: 1;
   text-align: center;
   color: white;
-  padding: 0 40px;
+  padding: 0;
 `;
 
 const Links = (props) => {
   return (
     <Root {...props}>
-      {linkData.map(({ logo: Logo, label, href }) => (
+      {promo.map(({ label, href }) => (
         <Link
           css={css`
             margin-top: 12px;
@@ -36,7 +36,6 @@ const Links = (props) => {
           key={href}
           href={href}
         >
-          <Logo />
           <Label>{label}</Label>
         </Link>
       ))}

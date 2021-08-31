@@ -6,6 +6,7 @@ import AvatarSection from "./AvatarSection";
 
 const HomePage = () => (
   <div>
+    <LogoSection />
     <AvatarSection />
     <VideoSection />
     <MenuSection id="menu" />

@@ -49,12 +49,34 @@ export const Facebook = {
   href: "https://www.facebook.com/mholm815",
 };
 
+export const TrashPandas = {
+  label: "The Trash Pandas",
+  href: "https://thetrashpandas.com",
+};
+
+export const PatternsOfSaturn = {
+  label: "Patterns of Saturn",
+  href: "https://www.facebook.com/patternsofsaturn",
+};
+
+export const BuriedBlonde = {
+  label: "Buried Blonde",
+  href: "https://www.laurenflynnwastaken.com/",
+};
+
+export const Sandcastles = {
+  label: "Sandcastles EP - Out Now!",
+  href: "https://linktr.ee/sandcastles",
+};
+
 export const DM = [TikTok, Instagram, Facebook];
 
 export const Tip = [Venmo, CashApp];
 
 export const Listen = [YouTube, SoundCloud];
 
-const linkData = [...DM, ...Listen, ...Tip];
+const socials = [...DM, ...Listen, ...Tip];
 
-export default linkData;
+export const promo = [Sandcastles, BuriedBlonde, PatternsOfSaturn, TrashPandas];
+
+export default socials;
