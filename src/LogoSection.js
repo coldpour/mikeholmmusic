@@ -4,7 +4,7 @@ import linkData from "./linkData";
 
 const Root = styled.div`
   background: ${(props) => props.theme.colors.primary};
-  padding: 15px;
+  padding: 50px;
   display: flex;
   justify-content: center;
 `;

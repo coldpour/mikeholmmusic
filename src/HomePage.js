@@ -5,17 +5,20 @@ import LogoSection from "./LogoSection";
 import MenuSection from "./MenuSection";
 import AvatarSection from "./AvatarSection";
 
-const BottomLogoSection = styled(LogoSection)`
-  padding: 50px;
+const TopLogoSection = styled(LogoSection)`
+  padding: 15px;
+  @media (min-width: 700px) {
+    padding: 25px;
+  }
 `;
 
 const HomePage = () => (
   <div>
-    <LogoSection />
+    <TopLogoSection />
     <AvatarSection />
     <VideoSection />
     <MenuSection id="menu" />
-    <BottomLogoSection />
+    <LogoSection />
   </div>
 );
 
