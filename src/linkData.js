@@ -65,8 +65,13 @@ export const BuriedBlonde = {
 };
 
 export const Sandcastles = {
-  label: "Sandcastles EP - Out Now!",
+  label: "Straight Lines Bright Colors",
   href: "https://linktr.ee/sandcastles",
+};
+
+export const LikeAScar = {
+  label: "Like A Scar - Burried Blonde",
+  href: "https://www.youtube.com/watch?v=UmsyI0ib23I",
 };
 
 export const DM = [TikTok, Instagram, Facebook];
@@ -77,6 +82,12 @@ export const Listen = [YouTube, SoundCloud];
 
 const socials = [...DM, ...Listen, ...Tip];
 
-export const promo = [Sandcastles, BuriedBlonde, PatternsOfSaturn, TrashPandas];
+export const promo = [
+  LikeAScar,
+  Sandcastles,
+  BuriedBlonde,
+  PatternsOfSaturn,
+  TrashPandas,
+];
 
 export default socials;
