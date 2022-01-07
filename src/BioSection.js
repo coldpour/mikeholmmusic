@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import styled from "@emotion/styled";
+import * as Links from "./linkData";
 
 const Root = styled.div`
   background: white;
@@ -9,6 +10,11 @@ const Root = styled.div`
 const Constraint = styled.div`
   max-width: 600px;
   margin: auto;
+  padding: 0 1em;
+
+  @media (min-width: 600px) {
+    padding: 0;
+  }
 `;
 
 const Link = styled.a``;
@@ -42,7 +48,11 @@ const BioSection = () => {
           <Link href="https://en.wikipedia.org/wiki/James_Litton">
             James Litton
           </Link>
-          , Vincent Metallo,{" "}
+          ,{" "}
+          <Link href="https://www.bach-cantatas.com/Bio/Metallo-Vincent.htm">
+            Vincent Metallo
+          </Link>
+          ,{" "}
           <Link href="https://www.facebook.com/malvarru">
             Fernando Malvar-Ruiz
           </Link>{" "}
@@ -74,10 +84,10 @@ const BioSection = () => {
           carried his drums from dorm storage to anywhere on campus that
           wouldn’t evict him. By graduation, Mike had gained a reputation for
           his musicianship. "I was just delighted when I realized that I could
-          actually hear the melody in your solo!" -{" "}
-          <Link href="https://www.lauracaviani.com/">Laura Caviani</Link>. After
-          college, Mike auditioned for countless Minneapolis bands, but only got
-          picked up by a few that fizzled out quickly.
+          actually hear the melody in your solo! That's so rare and I loved it."
+          - <Link href="https://www.lauracaviani.com/">Laura Caviani</Link>.
+          After college, Mike auditioned for countless Minneapolis bands, but
+          only got picked up by a few that fizzled out quickly.
         </p>
         <p>
           Upon moving to Boulder, fed up with the constant packing and unpacking
@@ -88,19 +98,28 @@ const BioSection = () => {
           drums, running rehearsals and posting a website, Mike learned to run
           sound, do marketing, and quickly built a rambunctious loyal fanbase.
           While the pandemic killed the Trash Pandas, it also gave birth to the
-          indie-rock duo, Straight Lines Bright Colors. Moving to Seattle in
-          2021, the search for kindred spirits led Mike to the Hidden Door blues
-          jam, where Buried Blonde noticed Mike’s passionate dexterity and calm
-          professionalism, and Lauren’s desire to carve out her musical niche
-          resonated with Mike’s.
+          indie-rock duo,{" "}
+          <Link href={Links.Sandcastles.href}>
+            Straight Lines Bright Colors
+          </Link>
+          . Moving to Seattle in 2021, the search for kindred spirits led Mike
+          to the Hidden Door blues jam, where{" "}
+          <Link href={Links.BuriedBlonde.href}>Buried Blonde</Link> noticed
+          Mike’s passionate dexterity and calm professionalism, and Lauren’s
+          drive to carve out her musical niche resonated with Mike’s.
         </p>
         <p>
           Mike has built a home studio where he can blend his tasteful tapping
-          with artists across the globe. From quiet indie rock with Straight
-          Lines Bright Colors, and the highly syncopated funk-rap fusion of
-          Patterns of Saturn, to the raucous pounding hard rock of Buried
-          Blonde, Mike is always able to pull something from his deep bag of
-          grooves and masterfully blend it to fit the time and place.
+          with artists across the globe. From quiet indie rock with{" "}
+          <Link href={Links.Sandcastles.href}>
+            Straight Lines Bright Colors
+          </Link>
+          , and the highly syncopated funk-rap fusion of{" "}
+          <Link href={Links.PatternsOfSaturn}>Patterns of Saturn</Link>, to the
+          raucous pounding hard rock of{" "}
+          <Link href={Links.BuriedBlonde.href}>Buried Blonde</Link>, Mike is
+          always able to pull something from his deep bag of grooves and
+          masterfully blend it to fit the time and place.
         </p>
       </Constraint>
     </Root>
