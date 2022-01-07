@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import VideoSection from "./VideoSection";
 import LogoSection from "./LogoSection";
 import AvatarSection from "./AvatarSection";
+import BioSection from "./BioSection";
 
 const TopLogoSection = styled(LogoSection)`
   padding: 15px;
@@ -16,6 +17,7 @@ const HomePage = () => (
     <TopLogoSection />
     <AvatarSection />
     <VideoSection />
+    <BioSection />
     <LogoSection />
   </div>
 );
