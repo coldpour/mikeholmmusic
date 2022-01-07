@@ -70,7 +70,7 @@ export const Sandcastles = {
 };
 
 export const LikeAScar = {
-  label: "Like A Scar - Burried Blonde",
+  label: "Like A Scar - Buried Blonde",
   href: "https://www.youtube.com/watch?v=UmsyI0ib23I",
 };
 

@@ -91,16 +91,16 @@ const BioSection = () => {
           indie-rock duo, Straight Lines Bright Colors. Moving to Seattle in
           2021, the search for kindred spirits led Mike to the Hidden Door blues
           jam, where Buried Blonde noticed Mike’s passionate dexterity and calm
-          professionalism, and Lauren’s struggle to carve out her musical niche
+          professionalism, and Lauren’s desire to carve out her musical niche
           resonated with Mike’s.
         </p>
         <p>
           Mike has built a home studio where he can blend his tasteful tapping
           with artists across the globe. From quiet indie rock with Straight
           Lines Bright Colors, and the highly syncopated funk-rap fusion of
-          Patterns of Saturn, to the raucous pounding hard pop of Buried Blonde,
-          Mike is always able to pull something from his deep bag of grooves and
-          masterfully blend it to fit the time and place.
+          Patterns of Saturn, to the raucous pounding hard rock of Buried
+          Blonde, Mike is always able to pull something from his deep bag of
+          grooves and masterfully blend it to fit the time and place.
         </p>
       </Constraint>
     </Root>
