@@ -2,7 +2,6 @@
 import styled from "@emotion/styled";
 import VideoSection from "./VideoSection";
 import LogoSection from "./LogoSection";
-import MenuSection from "./MenuSection";
 import AvatarSection from "./AvatarSection";
 
 const TopLogoSection = styled(LogoSection)`
@@ -17,7 +16,6 @@ const HomePage = () => (
     <TopLogoSection />
     <AvatarSection />
     <VideoSection />
-    <MenuSection id="menu" />
     <LogoSection />
   </div>
 );
