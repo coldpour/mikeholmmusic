@@ -68,56 +68,25 @@ const BioSection = () => {
           in Mike’s brain, relentlessly tapping on his skull.
         </p>
         <p>
-          While the accolades of his singing career were mostly handed to him,
-          his drumming career has been marked by struggle, sacrifice and
-          rejection. Learning the instrument by ear and playing along to his
-          favorite rock, funk and r&b records provided no foundation whatsoever
-          to study jazz in college, where{" "}
-          <Link href="https://www.facebook.com/dave.hagedorn.10">
-            Dave Haggedorn
-          </Link>{" "}
-          and <Link href="https://www.philhey.com/">Phil Hey</Link> reluctantly
-          took him on since he majored in Computer Science instead of music.
-          Insisting that he needed to vent the incessant rhythms in his head,
-          Mike convinced the department to tutor him however with low-priority
-          access to the shared practice room. Desperate to practice, Mike
-          carried his drums from dorm storage to anywhere on campus that
-          wouldn’t evict him. By graduation, Mike had gained a reputation for
-          his musicianship. "I was just delighted when I realized that I could
-          actually hear the melody in your solo! That's so rare and I loved it."
-          - <Link href="https://www.lauracaviani.com/">Laura Caviani</Link>.
-          After college, Mike auditioned for countless Minneapolis bands, but
-          only got picked up by a few that fizzled out quickly.
+          Upon moving to Boulder in 2014,  Mike started his own pop rock cover band,{" "}
+          <Link href="https://thetrashpandas.com">The Trash Pandas</Link>, where he not
+          only played drums, but also ran rehearsals and live sound, in addition to the
+          marketing and booking. The Trash Pandas quickly built a rambunctious loyal
+          fanbase to patronize the local bars, which led to several weddings and corporate
+          events. When the pandemic killed the Trash Pandas, Mike and the band's guitar
+          player, Tristan Weber, began writing and publishing indie-rock songs under the
+          name <Link href={Links.Sandcastles.href}>Straight Lines Bright Colors</Link>.
         </p>
         <p>
-          Upon moving to Boulder, fed up with the constant packing and unpacking
-          of auditions, Mike started his own cover band,{" "}
-          <Link href="https://thetrashpandas.com">The Trash Pandas</Link>, with
-          his neighbor playing pop rock songs at bars, weddings and corporate
-          events. Realizing that it took more to build a band than just playing
-          drums, running rehearsals and posting a website, Mike learned to run
-          sound, do marketing, and quickly built a rambunctious loyal fanbase.
-          While the pandemic killed the Trash Pandas, it also gave birth to the
-          indie-rock duo,{" "}
+          Mike has built a home studio where he records live drums with
+          artists across the globe. From dance pop with{" "}
+          <Link href="https://thetrashpandas.com">The Trash Pandas</Link>,
+          indie rock with{" "}
           <Link href={Links.Sandcastles.href}>
-            Straight Lines Bright Colors
-          </Link>
-          . Moving to Seattle in 2021, the search for kindred spirits led Mike
-          to the Hidden Door blues jam, where{" "}
-          <Link href={Links.BuriedBlonde.href}>Buried Blonde</Link> noticed
-          Mike’s passionate dexterity and calm professionalism, and Lauren’s
-          drive to carve out her musical niche resonated with Mike’s.
-        </p>
-        <p>
-          Mike has built a home studio where he can blend his tasteful tapping
-          with artists across the globe. From quiet indie rock with{" "}
-          <Link href={Links.Sandcastles.href}>
-            Straight Lines Bright Colors
+           Straight Lines Bright Colors
           </Link>
           , and the highly syncopated funk-rap fusion of{" "}
-          <Link href={Links.PatternsOfSaturn}>Patterns of Saturn</Link>, to the
-          raucous pounding hard rock of{" "}
-          <Link href={Links.BuriedBlonde.href}>Buried Blonde</Link>, Mike is
+          <Link href={Links.PatternsOfSaturn}>Patterns of Saturn</Link>, Mike is
           always able to pull something from his deep bag of grooves and
           masterfully blend it to fit the time and place.
         </p>
