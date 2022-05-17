@@ -59,19 +59,14 @@ export const PatternsOfSaturn = {
   href: "https://www.facebook.com/patternsofsaturn",
 };
 
-export const BuriedBlonde = {
-  label: "Buried Blonde",
-  href: "https://www.laurenflynnwastaken.com/",
-};
-
 export const Sandcastles = {
   label: "Straight Lines Bright Colors",
   href: "https://linktr.ee/sandcastles",
 };
 
-export const LikeAScar = {
-  label: "Like A Scar - Buried Blonde",
-  href: "https://www.youtube.com/watch?v=UmsyI0ib23I",
+export const MarzielloSetlist = {
+  label: "Marziello #setlist",
+  href: "https://music.youtube.com/playlist?list=PLEzUwo0F4pKoZCD772U7ZACLOf_l1ASHY&feature=share",
 };
 
 export const DM = [TikTok, Instagram, Facebook];
@@ -83,9 +78,8 @@ export const Listen = [YouTube, SoundCloud];
 const socials = [...DM, ...Listen, ...Tip];
 
 export const promo = [
-  LikeAScar,
+  MarzielloSetlist,
   Sandcastles,
-  BuriedBlonde,
   PatternsOfSaturn,
   TrashPandas,
 ];
