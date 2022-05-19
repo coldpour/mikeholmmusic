@@ -33,6 +33,11 @@ const BioSection = () => {
       <Constraint>
         <Heading>Biography</Heading>
         <p>
+          Mike Holm is a session drummer with experience in funk, pop, and rock,
+          skilled at matching his playing style, drum tuning and dynamics to a
+          range of musical contexts.
+        </p>
+        <p>
           Mike Holm started his musical journey in 1999 singing alto in{" "}
           <Link href="https://americanboychoir.org/">
             The American Boychoir
