@@ -66,7 +66,18 @@ export const Sandcastles = {
 
 export const MarzielloSetlist = {
   label: "Marziello #setlist",
-  href: "https://music.youtube.com/playlist?list=PLEzUwo0F4pKoZCD772U7ZACLOf_l1ASHY&feature=share",
+  href:
+    "https://music.youtube.com/playlist?list=PLEzUwo0F4pKoZCD772U7ZACLOf_l1ASHY&feature=share",
+};
+
+export const Bandcamp = {
+  label: "Bandcamp",
+  href: "https://mikeholm.bandcamp.com/",
+};
+
+export const NakedCharades = {
+  label: "🚨 PRE-SAVE NAKED CHARADES 🚨",
+  href: "https://distrokid.com/hyperfollow/mikeholm/naked-charades",
 };
 
 export const DM = [TikTok, Instagram, Facebook];
@@ -77,11 +88,6 @@ export const Listen = [YouTube, SoundCloud];
 
 const socials = [...DM, ...Listen, ...Tip];
 
-export const promo = [
-  MarzielloSetlist,
-  Sandcastles,
-  PatternsOfSaturn,
-  TrashPandas,
-];
+export const promo = [NakedCharades, Sandcastles, MarzielloSetlist];
 
 export default socials;
