@@ -22,6 +22,7 @@ const AvatarSection = (props) => {
             max-width: 490px;
           `}
           src="https://mms-images.out.customink.com/mms/images/catalog/colors/116200/views/alt/front_large_extended.png?design=egz0-00cp-get0&pblegacy=1&pblegacysize=big&digest=3341297967"
+          alt="I want to play Naked Charades tonight shirt"
         />
       </a>
       <h2>You could WIN 3 FREE music lessons!</h2>
