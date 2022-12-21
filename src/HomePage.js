@@ -4,6 +4,7 @@ import VideoSection from "./VideoSection";
 import LogoSection from "./LogoSection";
 import AvatarSection from "./AvatarSection";
 import BioSection from "./BioSection";
+import MerchSection from "./MerchSection";
 
 const TopLogoSection = styled(LogoSection)`
   padding: 15px;
@@ -16,6 +17,7 @@ const HomePage = () => (
   <div>
     <TopLogoSection />
     <AvatarSection />
+    <MerchSection />
     <VideoSection />
     <BioSection />
     <LogoSection />

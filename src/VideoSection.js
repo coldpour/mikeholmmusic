@@ -4,6 +4,7 @@ import Video from "./Video";
 
 const Root = styled.div`
   background: white;
+  padding: 70px 0 0;
 `;
 
 const Constraint = styled.div`

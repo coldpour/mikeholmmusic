@@ -76,7 +76,7 @@ export const Bandcamp = {
 };
 
 export const NakedCharades = {
-  label: "🚨 PRE-SAVE NAKED CHARADES 🚨",
+  label: "Naked Charades",
   href: "https://distrokid.com/hyperfollow/mikeholm/naked-charades",
 };
 
@@ -88,6 +88,6 @@ export const Listen = [YouTube, SoundCloud];
 
 const socials = [...DM, ...Listen, ...Tip];
 
-export const promo = [NakedCharades, Sandcastles, MarzielloSetlist];
+export const promo = [NakedCharades, Sandcastles];
 
 export default socials;
