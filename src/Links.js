@@ -6,7 +6,7 @@ import { promo } from "./linkData";
 const Root = styled.div``;
 
 const Link = styled.a`
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 14px;
   display: flex;
   align-items: center;

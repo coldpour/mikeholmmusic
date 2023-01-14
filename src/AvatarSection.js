@@ -28,7 +28,7 @@ const AvatarSection = (props) => {
         css={css`
           margin: auto;
           margin-top: 2em;
-          max-width: 300px;
+          max-width: 500px;
         `}
       />
     </Root>
