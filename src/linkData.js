@@ -80,10 +80,9 @@ export const NakedCharades = {
   href: "https://distrokid.com/hyperfollow/mikeholm/naked-charades",
 };
 
-export const WaxBandit = {
-  label: "1/22 Denver with Wax Bandit",
-  href:
-    "https://www.etix.com/ticket/p/8471278/dazmin-dleon-wditch-the-egowax-bandit-sage-suede-denver-globe-hall?partner_id=240&_ga=2.70651732.532282880.1673647837-603187296.1671836758",
+export const HeartOfFireBrainOfIce = {
+  label: "Heart of Fire, Brain of Ice",
+  href: https://distrokid.com/hyperfollow/mikeholm/hearth-of-fire-brain-of-ice
 };
 
 export const DM = [TikTok, Instagram, Facebook];
@@ -94,6 +93,6 @@ export const Listen = [YouTube, SoundCloud];
 
 const socials = [...DM, ...Listen, ...Tip];
 
-export const promo = [WaxBandit, NakedCharades, Sandcastles];
+export const promo = [HeartOfFireBrainOfIce, NakedCharades, Sandcastles];
 
 export default socials;
