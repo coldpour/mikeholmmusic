@@ -82,7 +82,7 @@ export const NakedCharades = {
 
 export const HeartOfFireBrainOfIce = {
   label: "Heart of Fire, Brain of Ice",
-  href: https://distrokid.com/hyperfollow/mikeholm/hearth-of-fire-brain-of-ice
+  href: "https://distrokid.com/hyperfollow/mikeholm/hearth-of-fire-brain-of-ice",
 };
 
 export const DM = [TikTok, Instagram, Facebook];
