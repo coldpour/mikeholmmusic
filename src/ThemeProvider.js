@@ -5,6 +5,7 @@ import { cerulean } from "./colors";
 const theme = {
   colors: {
     primary: cerulean,
+    secondary: "#fff",
   },
   shadow: [
     "none",

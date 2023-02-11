@@ -8,7 +8,7 @@ import Title from "./Title";
 const Root = styled.div`
   background: white;
   text-align: center;
-  padding: 50px 0 70px;
+  padding-top: 50px;
 `;
 
 const AvatarSection = (props) => {

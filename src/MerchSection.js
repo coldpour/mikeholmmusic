@@ -1,47 +1,89 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
+import nc from "./nc.jpg";
+import hof from "./hof.jpg";
 
 const Root = styled.div`
-  color: white;
-  text-align: center;
-  padding: 0 0 20px;
+  background: white;
+  padding-top: 1em;
 `;
 
-// https://www.customink.com/fundraising/naked-charades?utm_campaign=desktop-post-launch-v3&utm_content=naked-charades&utm_medium=social&utm_source=copy-link
+const Constraint = styled.div`
+  max-width: 438px;
+  margin: auto;
+  padding: 0 1em;
 
-const AvatarSection = (props) => {
+  @media (min-width: 600px) {
+    padding: 0;
+  }
+`;
+
+const Row = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+const Heading = styled.h2`
+  text-transform: uppercase;
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 200;
+  margin-bottom: 12px;
+`;
+
+const MerchSection = (props) => {
   return (
     <Root {...props}>
-      <h1>Limited-Edition Merch</h1>
-      <a href="https://www.customink.com/fundraising/naked-charades?utm_campaign=desktop-post-launch-v3&utm_content=naked-charades&utm_medium=social&utm_source=copy-link">
-        <img
+      <Constraint>
+        <Heading>Merch</Heading>
+        <Row>
+          <a href="https://themikeholm.myspreadshop.com/naked+charades-A63e7612d99b27e588237bdc5?productType=401&sellable=nOLAvb9RzBcaJdglMd11-401-10">
+            <div
+              css={css`
+                background-image: url("${nc}");
+                height: 200px;
+                width: 200px;
+                background-size: cover;
+              `}
+            />
+          </a>
+          <a href="https://themikeholm.myspreadshop.com/heart+of+fire+brain+of+ice-A63e73e4fade0753b997a376c?productType=1592&sellable=bBlN8zy9O7SpZlRNzLGg-1592-27&appearance=2">
+            <div
+              css={css`
+                background-image: url("${hof}");
+                height: 200px;
+                width: 200px;
+                background-size: cover;
+              `}
+            />
+          </a>
+        </Row>
+        <Row
           css={css`
-            width: 100%;
-            height: auto;
-            max-width: 490px;
+            margin-top: 0.5em;
           `}
-          src="https://mms-images.out.customink.com/mms/images/catalog/colors/116200/views/alt/front_large_extended.png?design=egz0-00cp-get0&pblegacy=1&pblegacysize=big&digest=3341297967"
-          alt="I want to play Naked Charades tonight shirt"
-        />
-      </a>
-      <h2>You could WIN 3 FREE music lessons!</h2>
-      <ol
-        css={css`
-          max-width: 420px;
-          margin: auto;
-          text-align: left;
-        `}
-      >
-        <li>Buy a shirt</li>
-        <li>Post a photo or video wearing your shirt to social media</li>
-        <li>Tag me to be entered to win</li>
-        <li>Drawing on Feb 1, 2023</li>
-      </ol>
-
-      <p>1 entry per platform! Post to TikTok and FB to double your odds!</p>
+        >
+          <a
+            css={css`
+              padding: 0 14px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-decoration: none;
+              height: 42px;
+              box-sizing: border-box;
+              background: black;
+              color: white;
+            `}
+            href="https://themikeholm.myspreadshop.com"
+          >
+            Shop
+          </a>
+        </Row>
+      </Constraint>
     </Root>
   );
 };
 
-export default AvatarSection;
+export default MerchSection;

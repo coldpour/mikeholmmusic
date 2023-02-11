@@ -4,7 +4,7 @@ import * as Links from "./linkData";
 
 const Root = styled.div`
   background: white;
-  padding: 50px 0 70px;
+  padding: 1em 0 70px;
 `;
 
 const Constraint = styled.div`
@@ -73,22 +73,27 @@ const BioSection = () => {
           in Mike’s brain, relentlessly tapping on his skull.
         </p>
         <p>
-          Upon moving to Boulder in 2014,  Mike started his own pop rock cover band,{" "}
-          <Link href="https://thetrashpandas.com">The Trash Pandas</Link>, where he not
-          only played drums, but also ran rehearsals and live sound, in addition to the
-          marketing and booking. The Trash Pandas quickly built a rambunctious loyal
-          fanbase to patronize the local bars, which led to several weddings and corporate
-          events. When the pandemic killed the Trash Pandas, Mike and the band's guitar
-          player, Tristan Weber, began writing and publishing indie-rock songs under the
-          name <Link href={Links.Sandcastles.href}>Straight Lines Bright Colors</Link>.
+          Upon moving to Boulder in 2014, Mike started his own pop rock cover
+          band, <Link href="https://thetrashpandas.com">The Trash Pandas</Link>,
+          where he not only played drums, but also ran rehearsals and live
+          sound, in addition to the marketing and booking. The Trash Pandas
+          quickly built a rambunctious loyal fanbase to patronize the local
+          bars, which led to several weddings and corporate events. When the
+          pandemic killed the Trash Pandas, Mike and the band's guitar player,
+          Tristan Weber, began writing and publishing indie-rock songs under the
+          name{" "}
+          <Link href={Links.Sandcastles.href}>
+            Straight Lines Bright Colors
+          </Link>
+          .
         </p>
         <p>
-          Mike has built a home studio where he records live drums with
-          artists across the globe. From dance pop with{" "}
-          <Link href="https://thetrashpandas.com">The Trash Pandas</Link>,
-          indie rock with{" "}
+          Mike has built a home studio where he records live drums with artists
+          across the globe. From dance pop with{" "}
+          <Link href="https://thetrashpandas.com">The Trash Pandas</Link>, indie
+          rock with{" "}
           <Link href={Links.Sandcastles.href}>
-           Straight Lines Bright Colors
+            Straight Lines Bright Colors
           </Link>
           , and the highly syncopated funk-rap fusion of{" "}
           <Link href={Links.PatternsOfSaturn}>Patterns of Saturn</Link>, Mike is
