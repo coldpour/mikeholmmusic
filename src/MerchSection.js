@@ -2,7 +2,8 @@
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import nc from "./nc.jpg";
-import hof from "./hof.jpg";
+import hofhood from "./hofhood.jpg";
+import hofmug from "./hofmug.jpg";
 
 const Root = styled.div`
   background: white;
@@ -38,7 +39,7 @@ const MerchSection = (props) => {
       <Constraint>
         <Heading>Merch</Heading>
         <Row>
-          <a href="https://themikeholm.myspreadshop.com/naked+charades-A63e7612d99b27e588237bdc5?productType=401&sellable=nOLAvb9RzBcaJdglMd11-401-10">
+          <a href="https://themikeholm.myshopify.com/products/naked-charades-organic-long-sleeve-baby-bodysuit">
             <div
               css={css`
                 background-image: url("${nc}");
@@ -48,10 +49,20 @@ const MerchSection = (props) => {
               `}
             />
           </a>
-          <a href="https://themikeholm.myspreadshop.com/heart+of+fire+brain+of+ice-A63e73e4fade0753b997a376c?productType=1592&sellable=bBlN8zy9O7SpZlRNzLGg-1592-27&appearance=2">
+          <a href="https://themikeholm.myshopify.com/products/premium-eco-hoodie">
             <div
               css={css`
-                background-image: url("${hof}");
+                background-image: url("${hofhood}");
+                height: 200px;
+                width: 200px;
+                background-size: cover;
+              `}
+            />
+          </a>
+          <a href="https://themikeholm.myshopify.com/products/black-glossy-mug-1">
+            <div
+              css={css`
+                background-image: url("${hofmug}");
                 height: 200px;
                 width: 200px;
                 background-size: cover;
@@ -61,7 +72,7 @@ const MerchSection = (props) => {
         </Row>
         <Row
           css={css`
-            margin-top: 0.5em;
+            margin-top: 2em;
           `}
         >
           <a
@@ -76,7 +87,7 @@ const MerchSection = (props) => {
               background: black;
               color: white;
             `}
-            href="https://themikeholm.myspreadshop.com"
+            href="https://themikeholm.myshopify.com/collections/all"
           >
             Shop
           </a>
