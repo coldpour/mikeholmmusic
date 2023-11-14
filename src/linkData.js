@@ -31,7 +31,7 @@ export const YouTube = {
 export const SoundCloud = {
   logo: Logos.SoundCloudLogo,
   alt: "soundcloud logo",
-  href: "https://soundcloud.com/mike-holm-173325201",
+  href: "https://soundcloud.com/themikeholm",
   label: "SoundCloud",
 };
 
