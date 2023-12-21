@@ -85,6 +85,11 @@ export const HeartOfFireBrainOfIce = {
   href: "https://distrokid.com/hyperfollow/mikeholm/hearth-of-fire-brain-of-ice",
 };
 
+export const Possibility = {
+  label: "Possibility",
+  href: "https://distrokid.com/hyperfollow/mikeholm/possibility",
+};
+
 export const DM = [TikTok, Instagram, Facebook];
 
 export const Tip = [Venmo, CashApp];
@@ -93,6 +98,6 @@ export const Listen = [YouTube, SoundCloud];
 
 const socials = [...DM, ...Listen, ...Tip];
 
-export const promo = [HeartOfFireBrainOfIce, NakedCharades, Sandcastles];
+export const promo = [Possibility, HeartOfFireBrainOfIce, NakedCharades, Sandcastles];
 
 export default socials;
