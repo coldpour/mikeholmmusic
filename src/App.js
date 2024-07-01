@@ -1,11 +1,11 @@
 /** @jsxImportSource @emotion/react */
+import HomePage from "./HomePage";
 import AppProviders from "./AppProviders";
-import AppRouter from "./AppRouter";
 
 const App = () => (
-  <AppProviders>
-    <AppRouter />
-  </AppProviders>
+    <AppProviders>
+        <HomePage/>
+    </AppProviders>
 );
 
 export default App;
