@@ -66,8 +66,7 @@ export const Sandcastles = {
 
 export const MarzielloSetlist = {
   label: "Marziello #setlist",
-  href:
-    "https://music.youtube.com/playlist?list=PLEzUwo0F4pKoZCD772U7ZACLOf_l1ASHY&feature=share",
+  href: "https://music.youtube.com/playlist?list=PLEzUwo0F4pKoZCD772U7ZACLOf_l1ASHY&feature=share",
 };
 
 export const Bandcamp = {
@@ -90,6 +89,11 @@ export const Possibility = {
   href: "https://distrokid.com/hyperfollow/mikeholm/possibility",
 };
 
+export const RedKarma = {
+  label: "Red Karma, a Taylor Swift Tribute",
+  href: "https://www.redkarma13.com/",
+};
+
 export const DM = [TikTok, Instagram, Facebook];
 
 export const Tip = [Venmo, CashApp];
@@ -98,6 +102,6 @@ export const Listen = [YouTube, SoundCloud];
 
 const socials = [...DM, ...Listen, ...Tip];
 
-export const promo = [Possibility, HeartOfFireBrainOfIce, NakedCharades, Sandcastles];
+export const promo = [Possibility, HeartOfFireBrainOfIce, NakedCharades, RedKarma, Sandcastles];
 
 export default socials;
