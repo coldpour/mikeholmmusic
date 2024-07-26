@@ -89,9 +89,19 @@ export const Possibility = {
   href: "https://distrokid.com/hyperfollow/mikeholm/possibility",
 };
 
+export const JustComeOn = {
+  label: "Just Come On",
+  href: "https://distrokid.com/hyperfollow/mikeholm/just-come-on",
+};
+
 export const RedKarma = {
   label: "Red Karma, a Taylor Swift Tribute",
   href: "https://www.redkarma13.com/",
+};
+
+export const Highsteppers = {
+  label: "The Highsteppers",
+  href: "https://thehighsteppers.com/",
 };
 
 export const DM = [TikTok, Instagram, Facebook];
@@ -102,6 +112,6 @@ export const Listen = [YouTube, SoundCloud];
 
 const socials = [...DM, ...Listen, ...Tip];
 
-export const promo = [Possibility, HeartOfFireBrainOfIce, NakedCharades, RedKarma, Sandcastles];
+export const promo = [JustComeOn, Possibility, HeartOfFireBrainOfIce, NakedCharades, Sandcastles, RedKarma, Highsteppers];
 
 export default socials;
