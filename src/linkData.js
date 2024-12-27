@@ -110,8 +110,13 @@ export const AllWeGotIsTime = {
 };
 
 export const Squat = {
-  label: "Squat",
+  label: "Squat!",
   href: "https://distrokid.com/hyperfollow/mikeholm/squat",
+};
+
+export const LogUps = {
+  label: "Log your Reps!",
+  href: "https://frosty-villani-af7372.netlify.app/",
 };
 
 export const RedKarma = {
@@ -127,6 +132,6 @@ export const Listen = [YouTube, SoundCloud];
 
 const socials = [...DM, ...Listen, ...Tip];
 
-export const promo = [Squat, JustComeOn, HeartOfFireBrainOfIce, Sandcastles, RedKarma];
+export const promo = [Squat, LogUps, JustComeOn, HeartOfFireBrainOfIce, Sandcastles, RedKarma];
 
 export default socials;
