@@ -109,6 +109,11 @@ export const AllWeGotIsTime = {
   href: "https://distrokid.com/hyperfollow/mikeholm/all-we-got-is-time-2",
 };
 
+export const Squat = {
+  label: "Squat",
+  href: "https://distrokid.com/hyperfollow/mikeholm/squat",
+};
+
 export const RedKarma = {
   label: "Red Karma, a Taylor Swift Tribute",
   href: "https://www.redkarma13.com/",
@@ -122,6 +127,6 @@ export const Listen = [YouTube, SoundCloud];
 
 const socials = [...DM, ...Listen, ...Tip];
 
-export const promo = [AllWeGotIsTime, RiseUp, Impediments, JustComeOn, Possibility, HeartOfFireBrainOfIce, NakedCharades, Sandcastles, RedKarma];
+export const promo = [Squat, JustComeOn, HeartOfFireBrainOfIce, Sandcastles, RedKarma];
 
 export default socials;
