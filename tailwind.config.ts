@@ -8,7 +8,7 @@ export default {
         DEFAULT: "300ms",
       },
       colors: {
-        white: "#bbb",
+        white: "#eee",
       },
       fontFamily: {
         sans: [
