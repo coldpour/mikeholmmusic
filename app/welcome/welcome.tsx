@@ -1,175 +1,125 @@
-import { useState, createContext, useContext, type ProviderProps } from "react";
+import { useState } from "react";
+const size = 200;
+type Color = "red" | "yellow" | "blue";
 
-const hourHeight = 30;
-interface MyEvent {
-  start: number;
-  duration: number;
-  description: string;
-}
-type Events = Record<number, MyEvent>;
-
-interface Value {
-  events: Events;
-  setEvents: React.Dispatch<React.SetStateAction<Events>>;
-  eventIdBeingEdited: number | null;
-  setEventIdBeingEdited: React.Dispatch<React.SetStateAction<number | null>>;
-  delta: number | null;
-  setDelta: React.Dispatch<React.SetStateAction<number | null>>;
-}
-const EventContext = createContext<Value | null>(null);
-const useEvents = () => useContext(EventContext);
-function EventProvider(props: { children: React.ReactNode | undefined }) {
-  const [events, setEvents] = useState<Events>({
-    1: {
-      start: 3,
-      duration: 2,
-      description: "plan party",
-    },
-  });
-  const [eventIdBeingEdited, setEventIdBeingEdited] = useState<null | number>(
-    null,
-  );
-  const [delta, setDelta] = useState<number | null>(null);
-
-  return (
-    <EventContext.Provider
-      value={{
-        events,
-        setEvents,
-        eventIdBeingEdited,
-        setEventIdBeingEdited,
-        delta,
-        setDelta,
-      }}
-      {...props}
-    />
-  );
-}
-
+const init: [string, string, string] = ["yellow", "red", "blue"];
 export function Welcome() {
-  return (
-    <EventProvider>
-      <main style={{ padding: "3rem", userSelect: "none" }}>
-        <Container>
-          <Hours />
-          <Events />
-        </Container>
-      </main>
-    </EventProvider>
-  );
-}
-
-function Hours() {
-  const context = useEvents();
-  if (context === null) return null;
-  const { setEvents } = context;
-  return (
-    <>
-      {Array.from({ length: 24 }).map((_, i) => {
-        const hour = i;
-        return (
-          <div
-            style={{ height: hourHeight }}
-            onClick={() => {
-              setEvents((prev) => ({
-                ...prev,
-                [Object.keys(prev).length + 1]: {
-                  start: hour,
-                  duration: 1,
-                  description: "busy",
-                },
-              }));
-            }}
-          >
-            <hr />
-            {hour}
-          </div>
-        );
-      })}
-      <hr />
-    </>
-  );
-}
-
-function Container(
-  props: React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLDivElement>,
-    HTMLDivElement
-  >,
-) {
-  const context = useEvents();
-  if (!context) return null;
-
-  const { setDelta, setEvents, eventIdBeingEdited, setEventIdBeingEdited } =
-    context;
-
+  const [finger, setFinger] = useState<Color | null>(null);
+  const [dots, setDots] = useState<[string, string, string]>(init);
   return (
     <div
-      style={{ position: "relative", zIndex: 0 }}
-      onMouseMove={(e) => {
-        if (eventIdBeingEdited != null) {
-          setDelta((e.target as HTMLDivElement).offsetTop / hourHeight);
-        }
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+        flexDirection: "column",
       }}
-      onMouseUp={(e) => {
-        if (eventIdBeingEdited != null) {
-          const start = (e.target as HTMLDivElement).offsetTop / hourHeight;
-          setEvents((prev) => ({
-            ...prev,
-            [eventIdBeingEdited]: {
-              ...prev[eventIdBeingEdited],
-              start,
-            },
-          }));
-          setEventIdBeingEdited(null);
-          setDelta(null);
-        }
-      }}
-      {...props}
-    />
-  );
-}
-
-function Events() {
-  const context = useEvents();
-  if (context === null) return null;
-
-  const { setDelta, events, delta, setEventIdBeingEdited, eventIdBeingEdited } =
-    context;
-  return (
-    <>
-      {Object.keys(events).map((id) => {
-        const myId = Number(id);
-        const event = events[myId];
-        const isDragging = eventIdBeingEdited === myId;
-        return (
+    >
+      <div>Are you ready to Mix It Up?</div>
+      <div
+        style={{
+          padding: "1rem",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            background: dots[0],
+            margin: "1rem",
+            width: size,
+            height: size,
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+          onClick={() => {
+            setFinger((prev) => (prev === null ? "yellow" : prev));
+            setDots((prev) => [
+              finger === "blue"
+                ? "green"
+                : finger === "red"
+                ? "orange"
+                : "yellow",
+              prev[1],
+              prev[2],
+            ]);
+          }}
+        >
+          {dots[0]}
+        </div>
+        <div style={{ display: "flex" }}>
           <div
             style={{
-              position: "absolute",
-              height: event.duration * hourHeight,
-              background: "green",
-              top:
-                (isDragging && delta != null ? delta : event.start) *
-                hourHeight,
-              width: "93%",
-              right: "0.5rem",
-              borderRadius: "0.5rem",
-              padding: "0.5rem",
-              opacity: isDragging ? "0.5" : 1,
-              zIndex: isDragging ? -1 : 0,
+              display: "flex",
+              background: dots[1],
+              margin: "1rem",
+              width: size,
+              height: size,
+              justifyContent: "center",
+              alignItems: "center",
             }}
-            onMouseDown={() => {
-              setEventIdBeingEdited(myId);
-              setDelta(event.start);
+            onClick={() => {
+              setFinger((prev) => (prev === null ? "red" : prev));
+              setDots((prev) => [
+                prev[0],
+                finger === "yellow"
+                  ? "orange"
+                  : finger === "blue"
+                  ? "purple"
+                  : "red",
+                prev[2],
+              ]);
             }}
           >
-            <div>
-              {event.description} from {event.start} til{" "}
-              {event.duration + event.start}
-            </div>
+            {dots[1]}
           </div>
-        );
-      })}
-    </>
+          <div
+            style={{
+              display: "flex",
+              background: dots[2],
+              margin: "1rem",
+              width: size,
+              height: size,
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+            onClick={() => {
+              setFinger((prev) => (prev === null ? "blue" : prev));
+              setDots((prev) => [
+                prev[0],
+                prev[1],
+                finger === "yellow"
+                  ? "green"
+                  : finger === "red"
+                  ? "purple"
+                  : "blue",
+              ]);
+            }}
+          >
+            {dots[2]}
+          </div>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            background: finger ?? undefined,
+            margin: "1rem",
+            width: size,
+            height: size,
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+          onClick={() => {
+            setDots(init);
+            setFinger(null);
+          }}
+        >
+          finger
+        </div>
+      </div>
+    </div>
   );
 }
