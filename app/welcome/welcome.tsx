@@ -1,11 +1,14 @@
+import chroma from "chroma-js";
 import { useState } from "react";
 const size = 200;
 type Color = "red" | "yellow" | "blue";
 
-const init: [string, string, string] = ["yellow", "red", "blue"];
+const palette: [Color, Color, Color] = ["yellow", "red", "blue"];
 export function Welcome() {
-  const [finger, setFinger] = useState<Color | null>(null);
-  const [dots, setDots] = useState<[string, string, string]>(init);
+  const [finger, setFinger] = useState<string | null>(null);
+  function mix(c: string) {
+    setFinger((prev) => (prev ? chroma.mix(c, prev, 0.5, "hsl") : c));
+  }
   return (
     <div
       style={{
@@ -14,6 +17,7 @@ export function Welcome() {
         alignItems: "center",
         height: "100vh",
         flexDirection: "column",
+        userSelect: "none",
       }}
     >
       <div>Are you ready to Mix It Up?</div>
@@ -28,7 +32,7 @@ export function Welcome() {
         <div
           style={{
             display: "flex",
-            background: dots[0],
+            background: palette[0],
             margin: "1rem",
             width: size,
             height: size,
@@ -36,25 +40,16 @@ export function Welcome() {
             alignItems: "center",
           }}
           onClick={() => {
-            setFinger((prev) => (prev === null ? "yellow" : prev));
-            setDots((prev) => [
-              finger === "blue"
-                ? "green"
-                : finger === "red"
-                ? "orange"
-                : "yellow",
-              prev[1],
-              prev[2],
-            ]);
+            mix(palette[0]);
           }}
         >
-          {dots[0]}
+          {palette[0]}
         </div>
         <div style={{ display: "flex" }}>
           <div
             style={{
               display: "flex",
-              background: dots[1],
+              background: palette[1],
               margin: "1rem",
               width: size,
               height: size,
@@ -62,24 +57,15 @@ export function Welcome() {
               alignItems: "center",
             }}
             onClick={() => {
-              setFinger((prev) => (prev === null ? "red" : prev));
-              setDots((prev) => [
-                prev[0],
-                finger === "yellow"
-                  ? "orange"
-                  : finger === "blue"
-                  ? "purple"
-                  : "red",
-                prev[2],
-              ]);
+              mix(palette[1]);
             }}
           >
-            {dots[1]}
+            {palette[1]}
           </div>
           <div
             style={{
               display: "flex",
-              background: dots[2],
+              background: palette[2],
               margin: "1rem",
               width: size,
               height: size,
@@ -87,19 +73,10 @@ export function Welcome() {
               alignItems: "center",
             }}
             onClick={() => {
-              setFinger((prev) => (prev === null ? "blue" : prev));
-              setDots((prev) => [
-                prev[0],
-                prev[1],
-                finger === "yellow"
-                  ? "green"
-                  : finger === "red"
-                  ? "purple"
-                  : "blue",
-              ]);
+              mix(palette[2]);
             }}
           >
-            {dots[2]}
+            {palette[2]}
           </div>
         </div>
         <div
@@ -113,11 +90,10 @@ export function Welcome() {
             alignItems: "center",
           }}
           onClick={() => {
-            setDots(init);
             setFinger(null);
           }}
         >
-          finger
+          {finger ? chroma(finger).name() : "finger"}
         </div>
       </div>
     </div>
