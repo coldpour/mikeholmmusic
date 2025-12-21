@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export function Welcome() {
   const [head, ...rest] = promo;
   return (
@@ -5,6 +7,14 @@ export function Welcome() {
       <div className="flex-1 flex flex-col items-center gap-4 md:gap-8 min-h-0 max-w-xl px-4">
         <header className="flex flex-1 flex-col items-start gap-5 md:gap-9">
           <h1 className="md:text-8xl text-6xl font-thin">Mike Holm</h1>
+          <div className="flex gap-3">
+            <Link
+              to="/about"
+              className="rounded-full border border-white/30 px-4 py-2 text-sm font-medium hover:border-white hover:bg-white/10 transition"
+            >
+              About
+            </Link>
+          </div>
           <ul className="flex gap-4 items-center">
             {socials.map(({ href, label, logo: Logo }) => (
               <li key={href}>
