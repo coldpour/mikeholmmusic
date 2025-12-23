@@ -24,10 +24,7 @@ export default function About() {
       <div className="max-w-3xl w-full flex flex-col gap-8">
         <header className="flex flex-col gap-4">
           <p className="text-sm uppercase tracking-[0.2em] text-gray-400">About</p>
-          <h1 className="text-4xl md:text-5xl font-semibold">Mike Holm</h1>
-          <p className="text-lg text-gray-200">
-            Singer turned drummer turned multi-genre songwriter and multi-instrumentalist.
-          </p>
+          <h1 className="md:text-8xl text-6xl font-thin">Mike Holm</h1>
           <div className="flex gap-3 flex-wrap">
             <Link
               to="/"
@@ -35,13 +32,6 @@ export default function About() {
             >
               Home
             </Link>
-            <a
-              href="https://linktr.ee/sandcastles"
-              className="rounded-full border border-white/20 px-4 py-2 text-sm hover:border-white hover:bg-white/5 transition"
-              rel="noreferrer"
-            >
-              Listen
-            </a>
           </div>
         </header>
 
