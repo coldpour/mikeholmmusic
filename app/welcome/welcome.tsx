@@ -18,6 +18,12 @@ export function Welcome() {
               </li>
             ))}
           </ul>
+          <a
+            href="/shows"
+            className="inline-flex items-center rounded-full bg-blue-700 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 dark:bg-blue-500 dark:hover:bg-blue-600"
+          >
+            See Upcoming Shows
+          </a>
           <Album {...head} />
         </header>
         <section className="grid grid-cols-2 gap-4">{rest.map(Album)}</section>
