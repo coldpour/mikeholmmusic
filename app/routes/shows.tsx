@@ -2,7 +2,7 @@ import { useLoaderData } from "react-router";
 
 import type { Route } from "./+types/shows";
 
-const CALENDAR_URL =
+const DEFAULT_CALENDAR_URL =
   "https://calendar.google.com/calendar/ical/83c974b9154e94c01dad499b64e8a76f35ac37d9561fc8ac62c75caf0cd50661%40group.calendar.google.com/public/basic.ics";
 
 interface CalendarEvent {
@@ -16,7 +16,9 @@ interface CalendarEvent {
 }
 
 export async function loader() {
-  const response = await fetch(CALENDAR_URL);
+  const calendarUrl = getCalendarUrl();
+
+  const response = await fetch(calendarUrl);
 
   if (!response.ok) {
     throw new Response("Unable to load shows", { status: response.status });
@@ -209,6 +211,18 @@ function parseDate(value: string): Date {
   // Assume local time if no timezone suffix
   const withSeparators = `${value.slice(0, 4)}-${value.slice(4, 6)}-${value.slice(6, 8)}T${value.slice(9, 11)}:${value.slice(11, 13)}:${value.slice(13, 15)}`;
   return new Date(withSeparators);
+}
+
+function getCalendarUrl() {
+  if (typeof import.meta !== "undefined" && import.meta.env?.VITE_CALENDAR_URL) {
+    return import.meta.env.VITE_CALENDAR_URL;
+  }
+
+  if (typeof process !== "undefined" && process.env?.CALENDAR_URL) {
+    return process.env.CALENDAR_URL;
+  }
+
+  return DEFAULT_CALENDAR_URL;
 }
 
 function extractFirstLink(description?: string) {

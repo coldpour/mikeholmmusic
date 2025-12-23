@@ -24,6 +24,6 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           install: false
-          start: npm run dev -- --host --port 5173
+          start: CALENDAR_URL=http://localhost:5173/test-calendar.ics npm run dev -- --host --port 5173
           wait-on: http://localhost:5173
           command: npx cypress@13.15.2 run --e2e --browser chrome
