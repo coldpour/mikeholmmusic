@@ -150,32 +150,32 @@ function parseIcs(ics: string): CalendarEvent[] {
     const key = rawKey.split(";")[0];
     const value = rest.join(":");
 
-    switch (key) {
-      case "SUMMARY":
-        current.title = value;
-        break;
-      case "DESCRIPTION": {
-        const description = value.replace(/\\n/g, "\n");
-        current.description = description;
-        const ticketLink = extractFirstLink(description);
-        if (ticketLink) current.ticketUrl = ticketLink;
-        break;
-      }
-      case "LOCATION":
-        current.location = value;
-        break;
-      case "DTSTART":
-      case "DTSTART;VALUE=DATE":
-      case "DTSTART;TZID=America/New_York":
-        current.start = parseDate(value);
-        break;
-      case "DTEND":
-      case "DTEND;VALUE=DATE":
-      case "DTEND;TZID=America/New_York":
-        current.end = parseDate(value);
-        break;
-      default:
-        break;
+    if (key === "SUMMARY") {
+      current.title = value;
+      continue;
+    }
+
+    if (key === "DESCRIPTION") {
+      const description = value.replace(/\\n/g, "\n");
+      current.description = description;
+      const ticketLink = extractFirstLink(description);
+      if (ticketLink) current.ticketUrl = ticketLink;
+      continue;
+    }
+
+    if (key === "LOCATION") {
+      current.location = value;
+      continue;
+    }
+
+    if (key.startsWith("DTSTART")) {
+      current.start = parseDate(value);
+      continue;
+    }
+
+    if (key.startsWith("DTEND")) {
+      current.end = parseDate(value);
+      continue;
     }
   }
 
