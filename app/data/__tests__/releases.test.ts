@@ -6,4 +6,9 @@ describe("getReleaseBySlug", () => {
     const release = getReleaseBySlug("squat");
     expect(release?.title).toBe("Squat!");
   });
+
+  it("includes sandcastles track data", () => {
+    const release = getReleaseBySlug("sandcastles");
+    expect(release?.tracks?.length).toBeGreaterThan(0);
+  });
 });
