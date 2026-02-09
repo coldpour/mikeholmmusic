@@ -51,8 +51,6 @@ export interface Release {
   tracks?: Track[];
 }
 
-const placeholderParagraph =
-  "Placeholder paragraph. We will workshop this copy together to capture the story, tone, and context around the release.";
 
 const spotifySearch = (query: string) =>
   `https://open.spotify.com/search/${encodeURIComponent(query)}`;
@@ -99,7 +97,8 @@ export const releases: Release[] = [
     type: "single",
     coverImage:
       "https://lh3.googleusercontent.com/yYi2eIbsoV4VR57b-B73itT46AC1slWe9WII-t2psJ2pvvUULzDxtyUEdbPa7_MhNS_v2d4VpknaHhFp=w544-h544-l90-rj",
-    description: placeholderParagraph,
+    description:
+      "This song started with the chorus. It showed up fully formed before I really started writing, and I knew I wanted that synth-heavy dance pull from Daft Punk and LMFAO. I grew up playing soccer and then switched to ultimate frisbee in college. After college I took athletics more seriously but still wasn’t spending much time in the weight room. Then I met a girl who is now my wife, who went to the gym every morning, and that became my life for five years. I was working out harder and eating healthier than I ever had in my life. It was a community that pushed me in the best way—competitive and supportive at the same time. People were happy to be there, to work hard, and to hang out after. I barely work out these days, but when I do, I put this song on and it helps me push for that last rep I might not otherwise go for.",
     links: mergeLinks(
       {
         bandcamp: "https://mikeholm.bandcamp.com/track/squat",
@@ -122,7 +121,8 @@ export const releases: Release[] = [
     type: "single",
     coverImage:
       "https://lh3.googleusercontent.com/ekDMV3T0Scid196x0pb68h6OnlSjwA1uuNWHwy5F1vA_a4mcL9KAzVFZji6XcV-FgpO0wT2k7VshOvKo=w544-h544-l90-rj",
-    description: placeholderParagraph,
+    description:
+      "This song is about the people we look up to and the way they shape us. You think mentors will have all the answers, and they do have a lot of them, but the hardest part is still finding balance for yourself. The song really started with my father-in-law. He was a traveling salesman, driving long hours to support his family, and in hotel rooms he filled notebooks with lyrics he never published. He gave me one of those books, and as I read through it the chorus came to me. It’s about all the time we spend apart for the promise of being together later, the irony of working so hard for a future we assume we’ll reach. Musically, I leaned into the storytelling warmth of Dave Matthews Band, John Hiatt, Jackson Browne, and Tim McGraw. I once had a boss tell me I was working too slowly and doing a bad job, and when I asked how to improve all he could say was, “It’s all about balance.” That idea kept circling back as I wrote. I also kept thinking about the warmth of family memories—weekends where someone handled the food so everyone else could play, the small adventures, the feeling of being together. Those people contribute to you, and then one day they are gone, often unexpectedly. While I was writing this song, my friend’s dad died suddenly of a heart attack, and that loss sharpened the stakes. The line “I know one day I’ll trade your company for your memory” says it plainly. The rest of the song is a reminder to make the most of the time we have, because it goes faster than we want it to.",
     links: mergeLinks(
       {
         bandcamp: "https://mikeholm.bandcamp.com/track/all-we-got-is-time",
@@ -144,7 +144,7 @@ export const releases: Release[] = [
     type: "single",
     coverImage:
       "https://lh3.googleusercontent.com/u0iJ_yQo0MOuBqJVbHkCMAooS0PVtYeC9rygOZzYi5bX6rNBiBXGSQ6o_OZyuKdcuFFeABsb6dJu7EnlGg=w544-h544-l90-rj",
-    description: placeholderParagraph,
+    description: "",
     links: mergeLinks(
       {
         bandcamp: "https://mikeholm.bandcamp.com/track/rise-up-ft-jamaal-coleman",
@@ -166,7 +166,7 @@ export const releases: Release[] = [
     type: "single",
     coverImage:
       "https://lh3.googleusercontent.com/3SMPbNC1HyvpR12i4Tf73zTFylM0PRMOAOOfuHeEVAgbAIzL3nHe9zojqY0tRUzNvrD_PnzAxAlfF3VsCA=w544-h544-l90-rj",
-    description: placeholderParagraph,
+    description: "",
     links: mergeLinks(
       {
         bandcamp: "https://mikeholm.bandcamp.com/track/impediments",
@@ -187,7 +187,7 @@ export const releases: Release[] = [
     type: "single",
     coverImage:
       "https://lh3.googleusercontent.com/IMtAIAQ1GeH1pyVC9xe4p1N4ymB9G2Bba2vs92uD1jMvUqZFRJpz0Nafjk8xii_iJG22_sAnWVx2_r24Eg=w544-h544-l90-rj",
-    description: placeholderParagraph,
+    description: "",
     links: mergeLinks(
       {
         bandcamp: "https://mikeholm.bandcamp.com/track/just-come-on",
@@ -209,7 +209,7 @@ export const releases: Release[] = [
     type: "single",
     coverImage:
       "https://lh3.googleusercontent.com/GL48m80uorQ9QlTX2k4wQp3t_Gda8HNV54FUR_gLcRtRVbpnM1LUa3-0nOBsd1ezvEwhXEK6gynbVn0D=w544-h544-l90-rj",
-    description: placeholderParagraph,
+    description: "",
     links: mergeLinks(
       {
         bandcamp: "https://mikeholm.bandcamp.com/track/possibility",
@@ -232,7 +232,7 @@ export const releases: Release[] = [
     type: "single",
     coverImage:
       "https://lh3.googleusercontent.com/9uxLQYbOc65uF-EIa8cpg_hUI5Gh3tbSi_H27qhWCqZwI9qLmF4M0ESqHfVcO-1t7AMOGuB-nWzh4kM=w544-h544-l90-rj",
-    description: placeholderParagraph,
+    description: "",
     links: mergeLinks(
       {
         bandcamp:
@@ -258,7 +258,7 @@ export const releases: Release[] = [
     type: "single",
     coverImage:
       "https://lh3.googleusercontent.com/7OxNCAgC47Cf9J5gHCuhZcRdqIDkXpyBqa12ahE4ZWikHJS-AewHIXAhSBzS6ttNXSgstJeN_IO-rWi-iQ=w544-h544-l90-rj",
-    description: placeholderParagraph,
+    description: "",
     links: mergeLinks(
       {
         bandcamp: "https://mikeholm.bandcamp.com/track/naked-charades",
@@ -282,7 +282,7 @@ export const releases: Release[] = [
     type: "album",
     coverImage:
       "https://lh3.googleusercontent.com/kbGM2wOVRuBFzSj8L2nlze8ADUOFD5DjoEu1jZwLzMfoBcCLe6vdZK_CnYHLcPJ_SahN285HuFgARiPWMA=w544-h544-l90-rj",
-    description: placeholderParagraph,
+    description: "",
     links: mergeLinks(
       {
         spotify: "https://open.spotify.com/album/0Ztug7GFBG0synKAqug5SN",
