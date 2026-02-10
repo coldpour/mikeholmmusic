@@ -581,6 +581,25 @@ This time must end as well
 But for now you're captured in the storm
 Here comes another swell`,
   },
+  {
+    slug: "chevy-truck",
+    title: "Chevy Truck",
+    artist: "John Vaughn",
+    type: "single",
+    coverImage:
+      "https://lh3.googleusercontent.com/jy8lnMsH40dyJm7QXLpU521jae1VZSbMKs6XY51yadeNyRtuGB6fFBdG_HXfsPiAuGQOkhnTZmTVUx_k=w544-h544-l90-rj",
+    description: "",
+    links: {
+      spotify: "https://open.spotify.com/track/4MCyvntXgkJu0y77BH5YEW",
+      apple: "https://music.apple.com/us/song/chevy-truck-feat-mike-holm/1818473066",
+      youtube: "https://music.youtube.com/watch?v=xCFpz2dBU-I&si=g7mZtfm2LEC4V9IL",
+      amazon:
+        "https://music.amazon.com/albums/B0FBRF5WLL?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_adxxBul5V5eUcMqkUn8VTi4Yd&trackAsin=B0FBRGFSBK",
+      tidal: "https://tidal.com/album/439754391/track/439754392",
+      deezer: "https://www.deezer.com/sr/track/3396934311",
+      soundcloud: "https://soundcloud.com/jonathan-vaughn-2/chevy-truck",
+    },
+  },
 ];
 
 export const albums: AlbumRelease[] = [
