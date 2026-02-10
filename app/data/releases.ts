@@ -300,6 +300,7 @@ I want your sugar baby`,
       youtube: "https://music.youtube.com/watch?v=r0yfU8aG8KQ&si=ySMZk2l7_-f59lwz",
       amazon:
         "https://music.amazon.com/albums/B09DBTXS2N?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_EQJf5UdWX7DY3bu7xnNs5R6ay&trackAsin=B09DBVJ7BV",
+      tidal: "https://tidal.com/track/194970002/u",
       deezer: "https://www.deezer.com/us/track/1472916722",
     },
     lyrics: `I’ve got figured out he said to me as his coffee spilled to the floor
@@ -369,6 +370,7 @@ Maybe we have to look for answers or else the world just hurts too much`,
       youtube: "https://music.youtube.com/watch?v=vDDJzzVEMCQ&si=SFOBErLtrQ-YWh2Q",
       amazon:
         "https://music.amazon.com/albums/B09DBTXS2N?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_Eu8ek625O2G93DVAUMND9EbJ8&trackAsin=B09DBVTN2R",
+      tidal: "https://tidal.com/track/194970003/u",
       deezer: "https://www.deezer.com/us/track/1472916732",
     },
     lyrics: `You said come on by for dinner
@@ -434,6 +436,7 @@ Not anymore`,
       youtube: "https://music.youtube.com/watch?v=N0qdC0W5L6Q&si=YlHoegY_RNMlYFPv",
       amazon:
         "https://music.amazon.com/albums/B09DBTXS2N?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_9vJqTJlhFykpFHvXkpOJRi7vS&trackAsin=B09DBXJ5MP",
+      tidal: "https://tidal.com/track/194970004/u",
       deezer: "https://www.deezer.com/us/track/1472916742",
     },
     lyrics: `Maybe you'll never learn to dance
@@ -504,6 +507,7 @@ And wash me away`,
       youtube: "https://music.youtube.com/watch?v=I4FJTm4SIYY&si=94UnWwBWi7CdX9lW",
       amazon:
         "https://music.amazon.com/albums/B09DBTXS2N?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_tDXIqFps2ri4lq6AzAacQP4Tj&trackAsin=B09DBWQDTG",
+      tidal: "https://tidal.com/track/194970005/u",
       deezer: "https://www.deezer.com/us/track/1472916752",
     },
     lyrics: `A stranger’s face
