@@ -1,10 +1,8 @@
 import { Link } from "react-router";
-import { albums, songs } from "../data/releases";
+import { homeReleases } from "../data/releases";
 
 export function Welcome() {
-  const singles = songs.filter((song) => song.type === "single");
-  const releases = [...albums, ...singles];
-  const [head, ...rest] = releases;
+  const [head, ...rest] = homeReleases;
   return (
     <main className="flex items-center justify-center pt-8 md:pt-16 pb-4">
       <div className="flex-1 flex flex-col items-center gap-4 md:gap-8 min-h-0 max-w-xl px-4">
@@ -65,7 +63,7 @@ function ReleaseCard({
   title,
   coverImage,
   type,
-}: (typeof albums)[number] | (typeof songs)[number]) {
+}: (typeof homeReleases)[number]) {
   const href = type === "album" ? `/album/${slug}` : `/song/${slug}`;
   return (
     <Link

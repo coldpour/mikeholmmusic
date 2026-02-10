@@ -620,3 +620,7 @@ export const getAlbumBySlug = (slug: string): AlbumRelease | undefined =>
 
 export const getSongBySlug = (slug: string): SongRelease | undefined =>
   songs.find((song) => song.slug === slug);
+
+export const homeReleases: Release[] = [...songs, ...albums].filter(
+  (release) => release.type === "single" || release.type === "album"
+);
