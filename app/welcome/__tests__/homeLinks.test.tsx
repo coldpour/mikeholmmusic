@@ -12,6 +12,6 @@ describe("home release links", () => {
     );
 
     const link = screen.getByRole("link", { name: /Squat!/i });
-    expect(link).toHaveAttribute("href", "/releases/squat");
+    expect(link).toHaveAttribute("href", "/song/squat");
   });
 });

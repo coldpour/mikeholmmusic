@@ -7,8 +7,9 @@ describe("getReleaseBySlug", () => {
     expect(release?.title).toBe("Squat!");
   });
 
-  it("includes sandcastles track data", () => {
-    const release = getReleaseBySlug("sandcastles");
-    expect(release?.tracks?.length).toBeGreaterThan(0);
+  it("exposes sandcastles track releases", () => {
+    const track = getReleaseBySlug("improv-for-no-one");
+    expect(track?.type).toBe("track");
+    expect(track?.album?.slug).toBe("sandcastles");
   });
 });

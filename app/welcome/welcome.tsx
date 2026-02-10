@@ -1,7 +1,9 @@
 import { Link } from "react-router";
-import { releases } from "../data/releases";
+import { albums, songs } from "../data/releases";
 
 export function Welcome() {
+  const singles = songs.filter((song) => song.type === "single");
+  const releases = [...albums, ...singles];
   const [head, ...rest] = releases;
   return (
     <main className="flex items-center justify-center pt-8 md:pt-16 pb-4">
@@ -21,11 +23,11 @@ export function Welcome() {
               </li>
             ))}
           </ul>
-          <Album {...head} />
+          <ReleaseCard {...head} />
         </header>
         <section className="grid grid-cols-2 gap-4">
           {rest.map((release) => (
-            <Album key={release.slug} {...release} />
+            <ReleaseCard key={release.slug} {...release} />
           ))}
         </section>
         <div className="max-w-[300px] w-full px-12">
@@ -58,12 +60,18 @@ export function Welcome() {
   );
 }
 
-function Album({ slug, title, coverImage }: (typeof releases)[number]) {
+function ReleaseCard({
+  slug,
+  title,
+  coverImage,
+  type,
+}: (typeof albums)[number] | (typeof songs)[number]) {
+  const href = type === "album" ? `/album/${slug}` : `/song/${slug}`;
   return (
     <Link
       key={slug}
       className="flex flex-col items-start gap-4 self-stretch leading-normal transition pb-4 hover:scale-105"
-      to={`/releases/${slug}`}
+      to={href}
     >
       <img src={coverImage} alt={title} className="rounded-md" />
       <h4 className="text-xs md:text-lg">{title}</h4>
