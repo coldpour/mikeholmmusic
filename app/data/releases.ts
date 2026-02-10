@@ -302,6 +302,8 @@ I want your sugar baby`,
         "https://music.amazon.com/albums/B09DBTXS2N?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_EQJf5UdWX7DY3bu7xnNs5R6ay&trackAsin=B09DBVJ7BV",
       tidal: "https://tidal.com/track/194970002/u",
       deezer: "https://www.deezer.com/us/track/1472916722",
+      soundcloud:
+        "https://soundcloud.com/user-371660148-936269429/improv-for-no-one",
     },
     lyrics: `I’ve got figured out he said to me as his coffee spilled to the floor
 if we just met at 10 each morning, we won’t feel anger anymore
@@ -372,6 +374,7 @@ Maybe we have to look for answers or else the world just hurts too much`,
         "https://music.amazon.com/albums/B09DBTXS2N?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_Eu8ek625O2G93DVAUMND9EbJ8&trackAsin=B09DBVTN2R",
       tidal: "https://tidal.com/track/194970003/u",
       deezer: "https://www.deezer.com/us/track/1472916732",
+      soundcloud: "https://soundcloud.com/user-371660148-936269429/five-years",
     },
     lyrics: `You said come on by for dinner
 I knew it should've sounded nice
@@ -438,6 +441,7 @@ Not anymore`,
         "https://music.amazon.com/albums/B09DBTXS2N?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_9vJqTJlhFykpFHvXkpOJRi7vS&trackAsin=B09DBXJ5MP",
       tidal: "https://tidal.com/track/194970004/u",
       deezer: "https://www.deezer.com/us/track/1472916742",
+      soundcloud: "https://soundcloud.com/user-371660148-936269429/sandcastles",
     },
     lyrics: `Maybe you'll never learn to dance
 But the way you move, brings smiles to the strangers that you meet
@@ -509,6 +513,7 @@ And wash me away`,
         "https://music.amazon.com/albums/B09DBTXS2N?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_tDXIqFps2ri4lq6AzAacQP4Tj&trackAsin=B09DBWQDTG",
       tidal: "https://tidal.com/track/194970005/u",
       deezer: "https://www.deezer.com/us/track/1472916752",
+      soundcloud: "https://soundcloud.com/user-371660148-936269429/broken",
     },
     lyrics: `A stranger’s face
 somehow sits now
