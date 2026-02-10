@@ -597,6 +597,7 @@ export const albums: AlbumRelease[] = [
       youtube:
         "https://music.youtube.com/playlist?list=OLAK5uy_m0-qfDpHgzNlhUzU5tlRZp_7RrIPdFM3k",
       apple: "https://music.apple.com/us/album/_/1582380515",
+      deezer: "https://www.deezer.com/us/album/253715462",
       soundcloud:
         "https://soundcloud.com/user-371660148-936269429/sets/sandcastles-ep",
       tidal: "https://listen.tidal.com/album/194970001",
