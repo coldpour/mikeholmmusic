@@ -39,6 +39,43 @@ export default function AlbumPage() {
     availableServices,
     selected && availableServices.includes(selected) ? selected : null
   );
+  const renderCollaboratorLinks = (text: string) => {
+    const pattern = /\bJohn Vaughn\b|\bJohn\b|\bAmit Amram\b|\bAmit\b/g;
+    const nodes: Array<string | JSX.Element> = [];
+    let lastIndex = 0;
+    let match: RegExpExecArray | null;
+
+    while ((match = pattern.exec(text)) !== null) {
+      if (match.index > lastIndex) {
+        nodes.push(text.slice(lastIndex, match.index));
+      }
+
+      const label = match[0];
+      const href =
+        label === "Amit Amram" || label === "Amit"
+          ? "https://amitsounds.com/"
+          : "https://boldjourney.com/meet-john-vaughn/";
+
+      nodes.push(
+        <a
+          key={`${match.index}-${label}`}
+          href={href}
+          className="text-gray-200 hover:underline underline-offset-4 visited:text-white"
+          rel="noreferrer"
+        >
+          {label}
+        </a>
+      );
+
+      lastIndex = match.index + label.length;
+    }
+
+    if (lastIndex < text.length) {
+      nodes.push(text.slice(lastIndex));
+    }
+
+    return nodes;
+  };
 
   return (
     <main className="flex items-center justify-center pt-8 md:pt-16 pb-8">
@@ -116,7 +153,42 @@ export default function AlbumPage() {
         {release.description ? (
           <section className="flex flex-col gap-3">
             <h2 className="text-lg">About this release</h2>
-            <p className="text-sm text-gray-200">{release.description}</p>
+            <div className="flex flex-col gap-3">
+              {release.description
+                .split(/\n{2,}/)
+                .map((block) => block.trim())
+                .filter(Boolean)
+                .map((block, index) => {
+                  const lines = block.split("\n").map((line) => line.trim());
+                  const isList = lines.every((line) => line.startsWith("- "));
+
+                  if (isList) {
+                    return (
+                      <ul key={index} className="list-disc pl-5 text-sm text-gray-200">
+                        {lines.map((line) => (
+                          <li key={line}>{renderCollaboratorLinks(line.replace(/^- /, ""))}</li>
+                        ))}
+                      </ul>
+                    );
+                  }
+
+                  const content = renderCollaboratorLinks(block);
+
+                  if (block.includes("\n")) {
+                    return (
+                      <p key={index} className="text-sm text-gray-200 whitespace-pre-line">
+                        {content}
+                      </p>
+                    );
+                  }
+
+                  return (
+                    <p key={index} className="text-sm text-gray-200">
+                      {content}
+                    </p>
+                  );
+                })}
+            </div>
           </section>
         ) : null}
 

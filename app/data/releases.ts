@@ -588,7 +588,8 @@ Here comes another swell`,
     type: "single",
     coverImage:
       "https://lh3.googleusercontent.com/jy8lnMsH40dyJm7QXLpU521jae1VZSbMKs6XY51yadeNyRtuGB6fFBdG_HXfsPiAuGQOkhnTZmTVUx_k=w544-h544-l90-rj",
-    description: "",
+    description:
+      "John Vaughn came into the studio wanting to make a country song. He had the opening guitar lick and the first hint of the melody, so we tracked that and built a loop to set the vibe. The very next session he came back with the lyrics nearly done, so we laid out the structure and tracked the vocals. I tracked the drums in my home studio. I had just gotten this new cymbal stack that you can hear in the pre choruses and on the bridge. I was pulling from my favorite country records from Tim McGraw, Taylor Swift, and Old Dominion. John chose his favorite grooves and fills and then we felt like it needed one more lift, so we sent it to Amit Amram for the mix. Amit absolutely nailed it with the final guitar solo that the song was missing.\n\nLyrics and Vocals: John Vaughn\nGuitar: John Vaughn, Amit Amram\nDrums: Mike Holm\nEngineering: Mike Holm, Amit Amram\nMixing and Mastering: Amit Amram",
     links: {
       spotify: "https://open.spotify.com/track/4MCyvntXgkJu0y77BH5YEW",
       apple: "https://music.apple.com/us/song/chevy-truck-feat-mike-holm/1818473066",
