@@ -8,11 +8,15 @@ describe("filterServices", () => {
     expect(filterServices(services, null)).toEqual(services);
   });
 
-  it("returns selected service plus bandcamp", () => {
+  it("returns selected service plus bandcamp when available", () => {
     expect(filterServices(services, "spotify")).toEqual(["bandcamp", "spotify"]);
   });
 
   it("returns bandcamp only if selected is bandcamp", () => {
     expect(filterServices(services, "bandcamp")).toEqual(["bandcamp"]);
+  });
+
+  it("returns only the selected service when bandcamp is missing", () => {
+    expect(filterServices(["spotify", "apple"], "spotify")).toEqual(["spotify"]);
   });
 });

@@ -4,7 +4,8 @@ export function filterServices(
 ): string[] {
   if (!selected) return services;
   if (selected === "bandcamp") return ["bandcamp"];
-  return ["bandcamp", selected].filter(
-    (service, index, arr) => arr.indexOf(service) === index
-  );
+  if (services.includes("bandcamp")) {
+    return ["bandcamp", selected];
+  }
+  return [selected];
 }
