@@ -590,6 +590,74 @@ Here comes another swell`,
       "https://lh3.googleusercontent.com/jy8lnMsH40dyJm7QXLpU521jae1VZSbMKs6XY51yadeNyRtuGB6fFBdG_HXfsPiAuGQOkhnTZmTVUx_k=w544-h544-l90-rj",
     description:
       "John Vaughn came into the studio wanting to make a country song. He had the opening guitar lick and the first hint of the melody, so we tracked that and built a loop to set the vibe. The very next session he came back with the lyrics nearly done, so we laid out the structure and tracked the vocals. I tracked the drums in my home studio. I had just gotten this new cymbal stack that you can hear in the pre choruses and on the bridge. I was pulling from my favorite country records from Tim McGraw, Taylor Swift, and Old Dominion. John chose his favorite grooves and fills and then we felt like it needed one more lift, so we sent it to Amit Amram for the mix. Amit absolutely nailed it with the final guitar solo that the song was missing.\n\nLyrics and Vocals: John Vaughn\nGuitar: John Vaughn, Amit Amram\nDrums: Mike Holm\nEngineering: Mike Holm, Amit Amram\nMixing and Mastering: Amit Amram",
+    lyrics: `This old truck on miles, but it’s still on the road. 
+These damn shoes got holes, but I’ll still put them on 
+on a Monday still wanna break that alarm clock 
+and get back to dreaming about
+
+Soaking up the sun outside with my feet in the sand, 
+nothing else weighing on me, but the drink in my hand 
+And even though when I wake up, it won’t be the same 
+truth is I can’t complain. 
+
+I know that’s right 
+and I’m just a simple guy.
+
+My Chevy truck don't mind doing 75
+My windows down six pack in the passenger side
+My baby looks so fine got me feeling alive
+You know I won't be running away
+I got some boys back home that'll drink til nine
+I got a place I can get away when it's not fine
+Yeah, maybe have FOMO on a Saturday night
+But damn, I gotta say
+Life is feeling so good today
+Yeah, life is feeling so good today
+Whoa 
+Whoa
+
+You get onto me
+Baby, yeah I swear I'm not the enemy
+Tell me what you need I got the recipe
+Yeah, I ain't missing a beat
+And the way you look is all I can see
+I know you get the side glance soon as you walk in the room
+You ain't even gotta try to get them looking at you
+I can tell that don't really matter at all
+And that's what I love the most
+
+About you, babe
+Because you take me all the way
+
+My Chevy truck don't mind doing 75
+My windows down six pack in the passenger side
+My baby looks so fine got me feeling alive
+You know I won't be running away
+I got some boys back home that'll drink til nine
+I got a place I can get away when it's not fine
+Yeah, maybe have FOMO on a Saturday night
+But damn, I gotta say
+Life is feeling so good today
+Yeah, life is feeling so good today
+Whoa 
+Whoa
+
+If I can't have you, darling
+I don't want no one
+Hold me and don't let me go
+
+My Chevy truck don't mind doing 75
+My windows down six pack in the passenger side
+My baby looks so fine got me feeling alive
+You know I won't be running away
+I got some boys back home that'll drink til nine
+I got a place I can get away when it's not fine
+Yeah, maybe have FOMO on a Saturday night
+But damn, I gotta say
+Life is feeling so good today
+Yeah, life is feeling so good today
+Whoa 
+Whoa`,
     links: {
       spotify: "https://open.spotify.com/track/4MCyvntXgkJu0y77BH5YEW",
       apple: "https://music.apple.com/us/song/chevy-truck-feat-mike-holm/1818473066",
