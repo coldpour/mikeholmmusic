@@ -292,7 +292,8 @@ I want your sugar baby`,
     album: { slug: "sandcastles", title: "Sandcastles" },
     coverImage:
       "https://lh3.googleusercontent.com/kbGM2wOVRuBFzSj8L2nlze8ADUOFD5DjoEu1jZwLzMfoBcCLe6vdZK_CnYHLcPJ_SahN285HuFgARiPWMA=w544-h544-l90-rj",
-    description: "",
+    description:
+      "The first thing I heard of this song was the verse guitar, and I was so excited I sent back the verse drums the same day. I had my drums set up in the living room at that point—just a couple SM57s and nothing fancy. I think I recorded them into our Soundcraft mixer that could only record two channels without a DAW, just straight to an SD card. I sent that back to Tristan and he came back a couple weeks later with the rest of the song and all the lyrics fully structured. I wasn’t satisfied with my microphones and room, so I went over to my friend Jordan’s house where he was setting up a nice home studio and took a couple runs at the song. The chorus drums are a combination of Stewart Copeland of The Police on “Next To You,” which I had played over and over on Rock Band for XBOX, and Travis Barker with Blink-182’s “First Date,” which Tristan and I had played 100 times in our cover band, The Trash Pandas. The intro for this song was so creative and fun to play—I don’t know how Tristan came up with that. He’s a genius.",
     links: {
       spotify:
         "https://open.spotify.com/track/31XncZutPoQLUrrJdjbJJ7?si=4d691cf0a6b74d94",

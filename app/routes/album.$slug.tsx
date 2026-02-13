@@ -40,7 +40,7 @@ export default function AlbumPage() {
     selected && availableServices.includes(selected) ? selected : null
   );
   const renderCollaboratorLinks = (text: string) => {
-    const pattern = /\bJohn Vaughn\b|\bJohn\b|\bAmit Amram\b|\bAmit\b/g;
+    const pattern = /(The Trash Pandas|John Vaughn|John|Amit Amram|Amit)/g;
     const nodes: Array<string | JSX.Element> = [];
     let lastIndex = 0;
     let match: RegExpExecArray | null;
@@ -52,9 +52,11 @@ export default function AlbumPage() {
 
       const label = match[0];
       const href =
-        label === "Amit Amram" || label === "Amit"
-          ? "https://amitsounds.com/"
-          : "https://boldjourney.com/meet-john-vaughn/";
+        label === "The Trash Pandas"
+          ? "https://soundcloud.com/user-281835539/farewell-show-may-22-2021"
+          : label === "Amit Amram" || label === "Amit"
+            ? "https://amitsounds.com/"
+            : "https://boldjourney.com/meet-john-vaughn/";
 
       nodes.push(
         <a
