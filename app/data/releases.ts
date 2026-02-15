@@ -365,7 +365,9 @@ Maybe we have to look for answers or else the world just hurts too much`,
     album: { slug: "sandcastles", title: "Sandcastles" },
     coverImage:
       "https://lh3.googleusercontent.com/kbGM2wOVRuBFzSj8L2nlze8ADUOFD5DjoEu1jZwLzMfoBcCLe6vdZK_CnYHLcPJ_SahN285HuFgARiPWMA=w544-h544-l90-rj",
-    description: "",
+    description: `Anymore was the second song we built together, but it didn’t come together easily. The drums, especially, resisted us. We tried to find a groove that felt natural, something familiar to lean on — but nothing fit. The song didn’t want a backbeat. It didn’t want comfort. It wanted tension. What emerged was a rhythm that avoids the expected, sidesteps the offbeat, and never quite settles — a subtle unease that mirrors the emotional terrain of the lyrics.
+
+Tristan brought the song in fully formed — melody, chords, arrangement, the whole architecture intact. My role was simply to listen for what it needed. And what it needed wasn’t propulsion; it was discomfort. Anymore lives in that quiet space where relationships stall out — where avoiding hard conversations feels easier than having them, where we start keeping score over things that don’t matter, where we forget that every day is a choice about the future we’re building together. The drums don’t resolve because the characters haven’t. They circle the question without landing on it. The song asks what happens when “easy” becomes the standard we measure love against — and what it costs when we stop reaching for something deeper.`,
     links: {
       spotify:
         "https://open.spotify.com/track/0R4NxmJlVLnccTc7u8waKf?si=a79a7b182aa04d2c",
@@ -432,7 +434,11 @@ Not anymore`,
     album: { slug: "sandcastles", title: "Sandcastles" },
     coverImage:
       "https://lh3.googleusercontent.com/kbGM2wOVRuBFzSj8L2nlze8ADUOFD5DjoEu1jZwLzMfoBcCLe6vdZK_CnYHLcPJ_SahN285HuFgARiPWMA=w544-h544-l90-rj",
-    description: "",
+    description: `Recorded fourth but lived with the longest, Sandcastles became a test of endurance as much as acceptance. Tristan brought it in fully arranged — melody, chords, structure intact — a gentle lecture on impermanence disguised as a driving, fast-moving song. I spent weeks woodshedding the drums just to survive it at tempo. In my head were flashes of Carter Beauford — splash cymbal color and restless movement — and Nate Smith’s relentless 16th-note hi-hat urgency, with floor tom fills that feel like momentum tipping forward. I wanted it in one take. No safety net. No edits.
+
+But the song hit deeper than its speed. The line “you say one day we’ll publish all your thoughts, but I’m not sure we will” cut hard in the wake of COVID and a band collapse, when the fear of fading into obscurity felt less poetic and more personal. The chorus offers comfort — it’s okay, I’m grateful we had this time — but the final post-chorus surges into something almost violent: be here now, because this will not last. Like sandcastles, the work is beautiful precisely because it won’t survive the tide.
+
+I finally asked Tristan to run the session while I played. I usually prefer control — splicing, polishing, perfecting — but this one needed witness and decision. We finished it that night in the basement. Later, Martha layered harmonies that elevated everything, even if it took a minute to find the exact shape Tristan was hearing. And in the bridge, when the band drops back from the chorus and the drums slam into halftime, hammering the snare with everything I’ve got, it feels like the thesis of the song: quiet acceptance everywhere else — but underneath, a fierce refusal to disappear without making a sound.`,
     links: {
       spotify:
         "https://open.spotify.com/track/0SOj4E56yLKIdQbHFJ5mBx?si=d3b5c62243db41a8",
@@ -504,7 +510,9 @@ And wash me away`,
     album: { slug: "sandcastles", title: "Sandcastles" },
     coverImage:
       "https://lh3.googleusercontent.com/kbGM2wOVRuBFzSj8L2nlze8ADUOFD5DjoEu1jZwLzMfoBcCLe6vdZK_CnYHLcPJ_SahN285HuFgARiPWMA=w544-h544-l90-rj",
-    description: "",
+    description: `Recorded in fragments over a couple of days, Broken sits between Anymore and Sandcastles on the timeline — but emotionally, it feels like the fault line of the whole record. Tristan sent it to me and said plainly: it’s about a panic attack. From there, the drums had a job. The opening pulse is a heart beating in your chest, physically. The song begins almost in a whisper, Tristan narrating sensations and spiraling thoughts with vivid, alliterative detail that feels less like songwriting and more like a field recording.
+
+As someone who’s never had a panic attack, I was struck by how cinematic and specific it felt — a simulation you can’t escape. The dynamics are extreme: from near-silence to full rupture. There’s a fun crash cymbal that lands deliberately off-beat right after the line “I think my mind has shattered.” Then at the end of the bridge, when he’s shouting “here comes another swell,” the drums double in size — we tracked them twice because one pass just wasn’t big enough. There’s a heavy backbeat and a fat, washy ride to anchor the chaos, but then, over the top, there’s a rolling, almost militaristic march of toms that pummel your ears. And then it all disintegrates — crashes out of time, structure collapsing, the song literally falls apart as it exhausts itself and fades away.`,
     links: {
       spotify:
         "https://open.spotify.com/track/6vpx7XHZLgeZPaldPWzdV0?si=3de60513afbd4d8a",
