@@ -73,7 +73,7 @@ export const songs: SongRelease[] = [
     artist: "Mike Holm",
     type: "single",
     coverImage:
-      "https://lh3.googleusercontent.com/yYi2eIbsoV4VR57b-B73itT46AC1slWe9WII-t2psJ2pvvUULzDxtyUEdbPa7_MhNS_v2d4VpknaHhFp=w544-h544-l90-rj",
+      "https://res.cloudinary.com/dtyfbjgve/image/upload/f_auto,q_auto,w_800,c_limit/v1770616032/IMG_0386_sxgpwc.jpg",
     description:
       "This song started with the chorus. It showed up fully formed before I really started writing, and I knew I wanted that synth-heavy dance pull from Daft Punk and LMFAO. I grew up playing soccer and then switched to ultimate frisbee in college. After college I took athletics more seriously but still wasn’t spending much time in the weight room. Then I met a girl who is now my wife, who went to the gym every morning, and that became my life for five years. I was working out harder and eating healthier than I ever had in my life. It was a community that pushed me in the best way—competitive and supportive at the same time. People were happy to be there, to work hard, and to hang out after. I barely work out these days, but when I do, I put this song on and it helps me push for that last rep I might not otherwise go for.",
     links: {
@@ -94,7 +94,7 @@ export const songs: SongRelease[] = [
     artist: "Mike Holm",
     type: "single",
     coverImage:
-      "https://lh3.googleusercontent.com/ekDMV3T0Scid196x0pb68h6OnlSjwA1uuNWHwy5F1vA_a4mcL9KAzVFZji6XcV-FgpO0wT2k7VshOvKo=w544-h544-l90-rj",
+      "https://res.cloudinary.com/dtyfbjgve/image/upload/f_auto,q_auto,w_800,c_limit/v1770615831/IMG_3238_sv4fev.jpg",
     description:
       "This song is about the people we look up to and the way they shape us. You think mentors will have all the answers, and they do have a lot of them, but the hardest part is still finding balance for yourself. The song really started with my father-in-law. He was a traveling salesman, driving long hours to support his family, and in hotel rooms he filled notebooks with lyrics he never published. He gave me one of those books, and as I read through it the chorus came to me. It’s about all the time we spend apart for the promise of being together later, the irony of working so hard for a future we assume we’ll reach. Musically, I leaned into the storytelling warmth of Dave Matthews Band, John Hiatt, Jackson Browne, and Tim McGraw. I once had a boss tell me I was working too slowly and doing a bad job, and when I asked how to improve all he could say was, “It’s all about balance.” That idea kept circling back as I wrote. I also kept thinking about the warmth of family memories—weekends where someone handled the food so everyone else could play, the small adventures, the feeling of being together. Those people contribute to you, and then one day they are gone, often unexpectedly. While I was writing this song, my friend’s dad died suddenly of a heart attack, and that loss sharpened the stakes. The line “I know one day I’ll trade your company for your memory” says it plainly. The rest of the song is a reminder to make the most of the time we have, because it goes faster than we want it to.",
     links: {
@@ -114,7 +114,7 @@ export const songs: SongRelease[] = [
     artist: "Mike Holm",
     type: "single",
     coverImage:
-      "https://lh3.googleusercontent.com/u0iJ_yQo0MOuBqJVbHkCMAooS0PVtYeC9rygOZzYi5bX6rNBiBXGSQ6o_OZyuKdcuFFeABsb6dJu7EnlGg=w544-h544-l90-rj",
+      "https://res.cloudinary.com/dtyfbjgve/image/upload/f_auto,q_auto,w_800,c_limit/v1770616018/15500FA6-CCCD-48AD-BFB6-8D3D465C8BB4_1_105_c_bfhrzs.jpg",
     description: "",
     links: {
       bandcamp: "https://mikeholm.bandcamp.com/track/rise-up-ft-jamaal-coleman",
@@ -133,7 +133,7 @@ export const songs: SongRelease[] = [
     artist: "Mike Holm",
     type: "single",
     coverImage:
-      "https://lh3.googleusercontent.com/3SMPbNC1HyvpR12i4Tf73zTFylM0PRMOAOOfuHeEVAgbAIzL3nHe9zojqY0tRUzNvrD_PnzAxAlfF3VsCA=w544-h544-l90-rj",
+      "https://res.cloudinary.com/dtyfbjgve/image/upload/f_auto,q_auto,w_800,c_limit/v1770616077/0B8F6E9A-23A0-4F21-B70A-2AC61FABB1AE_1_201_a_dgtxdt.heic",
     description: "",
     links: {
       bandcamp: "https://mikeholm.bandcamp.com/track/impediments",
@@ -151,7 +151,7 @@ export const songs: SongRelease[] = [
     artist: "Mike Holm",
     type: "single",
     coverImage:
-      "https://lh3.googleusercontent.com/IMtAIAQ1GeH1pyVC9xe4p1N4ymB9G2Bba2vs92uD1jMvUqZFRJpz0Nafjk8xii_iJG22_sAnWVx2_r24Eg=w544-h544-l90-rj",
+      "https://res.cloudinary.com/dtyfbjgve/image/upload/f_auto,q_auto,w_800,c_limit/v1770615965/cover4HD_lmuk03.jpg",
     description: "",
     links: {
       bandcamp: "https://mikeholm.bandcamp.com/track/just-come-on",
@@ -170,7 +170,7 @@ export const songs: SongRelease[] = [
     artist: "Mike Holm",
     type: "single",
     coverImage:
-      "https://lh3.googleusercontent.com/GL48m80uorQ9QlTX2k4wQp3t_Gda8HNV54FUR_gLcRtRVbpnM1LUa3-0nOBsd1ezvEwhXEK6gynbVn0D=w544-h544-l90-rj",
+      "https://res.cloudinary.com/dtyfbjgve/image/upload/f_auto,q_auto,w_800,c_limit/v1770616005/Possibility_Album_Cover_-_Full_5400_p65vo8.jpg",
     description: "",
     links: {
       bandcamp: "https://mikeholm.bandcamp.com/track/possibility",
@@ -190,7 +190,7 @@ export const songs: SongRelease[] = [
     artist: "Mike Holm",
     type: "single",
     coverImage:
-      "https://lh3.googleusercontent.com/9uxLQYbOc65uF-EIa8cpg_hUI5Gh3tbSi_H27qhWCqZwI9qLmF4M0ESqHfVcO-1t7AMOGuB-nWzh4kM=w544-h544-l90-rj",
+      "https://res.cloudinary.com/dtyfbjgve/image/upload/f_auto,q_auto,w_800,c_limit/v1770615932/Heart_of_Fire_Brain_of_Ice_-_Album_Cover_2300px_qzodsu.png",
     description: "",
     links: {
       bandcamp:
@@ -213,7 +213,7 @@ export const songs: SongRelease[] = [
     artist: "Mike Holm",
     type: "single",
     coverImage:
-      "https://lh3.googleusercontent.com/7OxNCAgC47Cf9J5gHCuhZcRdqIDkXpyBqa12ahE4ZWikHJS-AewHIXAhSBzS6ttNXSgstJeN_IO-rWi-iQ=w544-h544-l90-rj",
+      "https://res.cloudinary.com/dtyfbjgve/image/upload/f_auto,q_auto,w_800,c_limit/v1770615981/cover5_HD_wp6aai.jpg",
     description: "",
     links: {
       bandcamp: "https://mikeholm.bandcamp.com/track/naked-charades",
@@ -433,7 +433,7 @@ Not anymore`,
     type: "track",
     album: { slug: "sandcastles", title: "Sandcastles" },
     coverImage:
-      "https://lh3.googleusercontent.com/kbGM2wOVRuBFzSj8L2nlze8ADUOFD5DjoEu1jZwLzMfoBcCLe6vdZK_CnYHLcPJ_SahN285HuFgARiPWMA=w544-h544-l90-rj",
+      "https://res.cloudinary.com/dtyfbjgve/image/upload/f_auto,q_auto,w_800,c_limit/v1771177162/sandcastels_cover_bsjgdx.jpg",
     description: `Recorded fourth but lived with the longest, Sandcastles became a test of endurance as much as acceptance. Tristan brought it in fully arranged — melody, chords, structure intact — a gentle lecture on impermanence disguised as a driving, fast-moving song. I spent weeks woodshedding the drums just to survive it at tempo. In my head were flashes of Carter Beauford — splash cymbal color and restless movement — and Nate Smith’s relentless 16th-note hi-hat urgency, with floor tom fills that feel like momentum tipping forward. I wanted it in one take. No safety net. No edits.
 
 But the song hit deeper than its speed. The line “you say one day we’ll publish all your thoughts, but I’m not sure we will” cut hard in the wake of COVID and a band collapse, when the fear of fading into obscurity felt less poetic and more personal. The chorus offers comfort — it’s okay, I’m grateful we had this time — but the final post-chorus surges into something almost violent: be here now, because this will not last. Like sandcastles, the work is beautiful precisely because it won’t survive the tide.
@@ -596,7 +596,7 @@ Here comes another swell`,
     artist: "John Vaughn",
     type: "single",
     coverImage:
-      "https://lh3.googleusercontent.com/jy8lnMsH40dyJm7QXLpU521jae1VZSbMKs6XY51yadeNyRtuGB6fFBdG_HXfsPiAuGQOkhnTZmTVUx_k=w544-h544-l90-rj",
+      "https://res.cloudinary.com/dtyfbjgve/image/upload/f_auto,q_auto,w_800,c_limit/v1771177090/chevy_truck_cover_kws509.jpg",
     description:
       "John Vaughn came into the studio wanting to make a country song. He had the opening guitar lick and the first hint of the melody, so we tracked that and built a loop to set the vibe. The very next session he came back with the lyrics nearly done, so we laid out the structure and tracked the vocals. I tracked the drums in my home studio. I had just gotten this new cymbal stack that you can hear in the pre choruses and on the bridge. I was pulling from my favorite country records from Tim McGraw, Taylor Swift, and Old Dominion. John chose his favorite grooves and fills and then we felt like it needed one more lift, so we sent it to Amit Amram for the mix. Amit absolutely nailed it with the final guitar solo that the song was missing.\n\nLyrics and Vocals: John Vaughn\nGuitar: John Vaughn, Amit Amram\nDrums: Mike Holm\nEngineering: Mike Holm, Amit Amram\nMixing and Mastering: Amit Amram",
     lyrics: `This old truck on miles, but it’s still on the road. 
@@ -687,7 +687,7 @@ export const albums: AlbumRelease[] = [
     artist: "Straight Lines Bright Colors",
     type: "album",
     coverImage:
-      "https://lh3.googleusercontent.com/kbGM2wOVRuBFzSj8L2nlze8ADUOFD5DjoEu1jZwLzMfoBcCLe6vdZK_CnYHLcPJ_SahN285HuFgARiPWMA=w544-h544-l90-rj",
+      "https://res.cloudinary.com/dtyfbjgve/image/upload/f_auto,q_auto,w_800,c_limit/v1771177162/sandcastels_cover_bsjgdx.jpg",
     description: "",
     links: {
       spotify: "https://open.spotify.com/album/0Ztug7GFBG0synKAqug5SN",
