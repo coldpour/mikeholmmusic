@@ -1,6 +1,15 @@
 import { Link } from "react-router";
 import { homeReleases } from "../data/releases";
 
+const bandCards = [
+  {
+    title: "Red Karma",
+    coverImage:
+      "https://res.cloudinary.com/dtyfbjgve/image/upload/f_auto,q_auto,w_800,c_limit/v1771175857/IMG_7624-Edit-Edit_copy_numx5n.jpg",
+    href: "https://redkarma13.com/",
+  },
+] as const;
+
 export function Welcome() {
   const [head, ...rest] = homeReleases;
   return (
@@ -26,6 +35,9 @@ export function Welcome() {
         <section className="grid grid-cols-2 gap-4">
           {rest.map((release) => (
             <ReleaseCard key={release.slug} {...release} />
+          ))}
+          {bandCards.map((band) => (
+            <BandCard key={band.href} {...band} />
           ))}
         </section>
         <div className="max-w-[300px] w-full px-12">
@@ -74,6 +86,19 @@ function ReleaseCard({
       <img src={coverImage} alt={title} className="rounded-md" />
       <h4 className="text-xs md:text-lg">{title}</h4>
     </Link>
+  );
+}
+
+function BandCard({ title, coverImage, href }: (typeof bandCards)[number]) {
+  return (
+    <a
+      className="flex flex-col items-start gap-4 self-stretch leading-normal transition pb-4 hover:scale-105"
+      href={href}
+      rel="noreferrer"
+    >
+      <img src={coverImage} alt={title} className="rounded-md" />
+      <h4 className="text-xs md:text-lg">{title}</h4>
+    </a>
   );
 }
 
