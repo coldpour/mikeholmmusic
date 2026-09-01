@@ -19,12 +19,13 @@ describe("favorite drummers page", () => {
     render(<RouterProvider router={router} />);
 
     expect(await screen.findByRole("heading", { name: "Aaron Spears" })).toBeInTheDocument();
-    expect(screen.getAllByTitle(/:/)).toHaveLength(10);
+    expect(screen.getAllByTitle(/:/)).toHaveLength(11);
     expect(screen.getByRole("heading", { name: "Larnell Lewis" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Nate Smith" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "David Garibaldi" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Chad Smith" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Travis Barker" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Aron Mellergårdh" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Eric Moore II" })).toBeInTheDocument();
     expect(screen.getByTitle("Aaron Spears: Usher — Caught Up")).toHaveAttribute(
       "src",

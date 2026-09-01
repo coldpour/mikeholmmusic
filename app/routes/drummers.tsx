@@ -94,6 +94,13 @@ const mediaItems: readonly MediaItem[] = [
     videoId: "Rv01oxx1ZyU",
   },
   {
+    type: "youtube",
+    id: "aron-mellergaardh-sayonara-love",
+    drummer: "Aron Mellergårdh",
+    title: "Dirty Loops — Sayonara Love",
+    videoId: "Fnl6DMR7Jaw",
+  },
+  {
     type: "instagram",
     id: "eric-moore-get-ur-freak-on",
     drummer: "Eric Moore II",
