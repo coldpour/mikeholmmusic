@@ -19,17 +19,29 @@ describe("favorite drummers page", () => {
     render(<RouterProvider router={router} />);
 
     expect(await screen.findByRole("heading", { name: "Aaron Spears" })).toBeInTheDocument();
-    expect(screen.getAllByTitle(/:/)).toHaveLength(11);
+    expect(screen.getAllByTitle(/:/)).toHaveLength(16);
     expect(screen.getByRole("heading", { name: "Larnell Lewis" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Nate Smith" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "David Garibaldi" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Chad Smith" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Travis Barker" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Aron Mellergårdh" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Petar Janjic" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Jordan Rose" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Louis Cole" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Jas Kayser" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Anderson .Paak" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Eric Moore II" })).toBeInTheDocument();
     expect(screen.getByTitle("Aaron Spears: Usher — Caught Up")).toHaveAttribute(
       "src",
       "https://www.youtube.com/embed/YIX5rkirdl8?start=90"
+    );
+    expect(
+      screen.getByTitle("Jas Kayser: Alfa Mist — Bring Backs (Live at Metropolis)")
+    ).toHaveAttribute("src", "https://www.youtube.com/embed/15Nqbic6HZs?start=622");
+    expect(screen.getByTitle("Anderson .Paak: Come Down")).toHaveAttribute(
+      "src",
+      "https://www.youtube.com/embed/-OqrcUvrbRY?start=88"
     );
     expect(screen.getByText(/View Patrick Abdo’s post/i)).toHaveAttribute(
       "href",
