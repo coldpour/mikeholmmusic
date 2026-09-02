@@ -17,6 +17,7 @@ type InstagramItem = {
   drummer: string;
   title: string;
   permalink: string;
+  sharedBy?: string;
 };
 
 type MediaItem = YouTubeItem | InstagramItem;
@@ -143,6 +144,14 @@ const mediaItems: readonly MediaItem[] = [
     drummer: "Eric Moore II",
     title: "Missy Elliott — Get Ur Freak On",
     permalink: "https://www.instagram.com/reel/Dctt7CaOxJA/",
+    sharedBy: "Patrick Abdo",
+  },
+  {
+    type: "instagram",
+    id: "the-pocket-queen-instagram-reel",
+    drummer: "The Pocket Queen",
+    title: "Instagram reel",
+    permalink: "https://www.instagram.com/reel/DMYk7emhSEc/",
   },
 ];
 
@@ -266,6 +275,10 @@ function YouTubeVideo({ item }: { item: YouTubeItem }) {
 }
 
 function InstagramVideo({ item }: { item: InstagramItem }) {
+  const fallbackText = item.sharedBy
+    ? `View ${item.sharedBy}’s post featuring ${item.drummer} on Instagram`
+    : `View ${item.drummer} on Instagram`;
+
   return (
     <article className="flex flex-col gap-3">
       <div>
@@ -281,7 +294,7 @@ function InstagramVideo({ item }: { item: InstagramItem }) {
           style={{ margin: 0, maxWidth: 540, minWidth: 326, width: "99.375%" }}
         >
           <a href={item.permalink} target="_blank" rel="noreferrer">
-            View Patrick Abdo’s post featuring {item.drummer} on Instagram
+            {fallbackText}
           </a>
         </blockquote>
       </div>

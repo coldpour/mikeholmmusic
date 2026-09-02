@@ -32,6 +32,7 @@ describe("favorite drummers page", () => {
     expect(screen.getByRole("heading", { name: "Jas Kayser" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Anderson .Paak" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Eric Moore II" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "The Pocket Queen" })).toBeInTheDocument();
     expect(screen.getByTitle("Aaron Spears: Usher — Caught Up")).toHaveAttribute(
       "src",
       "https://www.youtube.com/embed/YIX5rkirdl8?start=90"
@@ -46,6 +47,10 @@ describe("favorite drummers page", () => {
     expect(screen.getByText(/View Patrick Abdo’s post/i)).toHaveAttribute(
       "href",
       "https://www.instagram.com/reel/Dctt7CaOxJA/"
+    );
+    expect(screen.getByRole("link", { name: /View The Pocket Queen/i })).toHaveAttribute(
+      "href",
+      "https://www.instagram.com/reel/DMYk7emhSEc/"
     );
   });
 
