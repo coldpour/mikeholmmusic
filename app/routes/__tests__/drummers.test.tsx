@@ -52,6 +52,20 @@ describe("favorite drummers page", () => {
       "href",
       "https://www.instagram.com/reel/DMYk7emhSEc/"
     );
+    expect(screen.queryByText("Why this one stays with me")).not.toBeInTheDocument();
+    expect(
+      screen.getByText(/I first encountered Jordan at a Theo Katzman show/i)
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(/This “Caught Up” performance was one of the first/i)
+    ).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /Jordan Rose/i })).toHaveAttribute(
+      "href",
+      "https://www.jordanrosedrums.com/"
+    );
+    expect(
+      screen.getByRole("link", { name: /Patrick Abdo on Instagram/i })
+    ).toHaveAttribute("href", "https://www.instagram.com/patrickjabdo/");
   });
 
   it("randomizes one mixed list of YouTube and Instagram videos", () => {
